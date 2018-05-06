@@ -23,6 +23,9 @@
 		EE399D2E209EA601008D642E /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2D209EA601008D642E /* SideMenuVC.swift */; };
 		EE399D30209EA614008D642E /* PlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2F209EA614008D642E /* PlayersVC.swift */; };
 		EE399D32209EC2A1008D642E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D31209EC2A1008D642E /* CollectionViewController.swift */; };
+		EE399D35209F7653008D642E /* varsity_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE399D34209F7650008D642E /* varsity_regular.ttf */; };
+		EE399D38209F7B88008D642E /* Theme Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE399D37209F7B88008D642E /* Theme Colors.xcassets */; };
+		EE399D3A209F7BCA008D642E /* Side Menu Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE399D39209F7BCA008D642E /* Side Menu Icons.xcassets */; };
 		EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA1025209033D300F3D66F /* AppDelegate.swift */; };
 		EECA1029209033D300F3D66F /* Basketball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECA1027209033D300F3D66F /* Basketball.xcdatamodeld */; };
 		EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA102A209033D300F3D66F /* MasterViewController.swift */; };
@@ -68,6 +71,9 @@
 		EE399D2D209EA601008D642E /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		EE399D2F209EA614008D642E /* PlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersVC.swift; sourceTree = "<group>"; };
 		EE399D31209EC2A1008D642E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EE399D34209F7650008D642E /* varsity_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = varsity_regular.ttf; sourceTree = "<group>"; };
+		EE399D37209F7B88008D642E /* Theme Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Theme Colors.xcassets"; sourceTree = "<group>"; };
+		EE399D39209F7BCA008D642E /* Side Menu Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Side Menu Icons.xcassets"; sourceTree = "<group>"; };
 		EECA1022209033D300F3D66F /* Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basketball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECA1025209033D300F3D66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECA1028209033D300F3D66F /* Basketball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basketball.xcdatamodel; sourceTree = "<group>"; };
@@ -142,8 +148,11 @@
 		EE399D10209D70A1008D642E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EE399D36209F7658008D642E /* Fonts */,
 				EE399D11209D70CD008D642E /* Audio Files */,
 				EECA1031209033D500F3D66F /* Assets.xcassets */,
+				EE399D37209F7B88008D642E /* Theme Colors.xcassets */,
+				EE399D39209F7BCA008D642E /* Side Menu Icons.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -174,6 +183,14 @@
 				EECA1033209033D500F3D66F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EE399D36209F7658008D642E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE399D34209F7650008D642E /* varsity_regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		EECA1019209033D200F3D66F = {
@@ -333,6 +350,9 @@
 			files = (
 				EE399D26209D7126008D642E /* Block.wav in Resources */,
 				EE399D24209D7126008D642E /* tov.wav in Resources */,
+				EE399D35209F7653008D642E /* varsity_regular.ttf in Resources */,
+				EE399D38209F7B88008D642E /* Theme Colors.xcassets in Resources */,
+				EE399D3A209F7BCA008D642E /* Side Menu Icons.xcassets in Resources */,
 				EE399D20209D7126008D642E /* Brick.wav in Resources */,
 				EE399D25209D7126008D642E /* TurnOver.wav in Resources */,
 				EE399D29209D7126008D642E /* Click.wav in Resources */,

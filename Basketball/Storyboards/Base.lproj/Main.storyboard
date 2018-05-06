@@ -6,9 +6,15 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="varsity_regular.ttf">
+            <string>Varsity</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Master-->
         <scene sceneID="pY4-Hu-kfo">
@@ -133,7 +139,7 @@
             </objects>
             <point key="canvasLocation" x="10903.200000000001" y="743.47826086956525"/>
         </scene>
-        <!--Game Stats-->
+        <!--GAME STATS-->
         <scene sceneID="faY-av-uhk">
             <objects>
                 <viewController storyboardIdentifier="GameViewController" id="oDr-QA-oBp" sceneMemberID="viewController">
@@ -1099,7 +1105,7 @@ clear all stats?</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kW7-wG-2uH"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Game Stats" id="ze6-1d-7DF">
+                    <navigationItem key="navigationItem" title="GAME STATS" id="ze6-1d-7DF">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rx0-Gi-eqv"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="L5W-Ut-jHr"/>
                     </navigationItem>
@@ -1108,7 +1114,7 @@ clear all stats?</string>
             </objects>
             <point key="canvasLocation" x="5716" y="286.50674662668666"/>
         </scene>
-        <!--Info-->
+        <!--INFO-->
         <scene sceneID="ft4-fc-1u2">
             <objects>
                 <viewController id="4ac-Ew-QND" sceneMemberID="viewController">
@@ -1274,7 +1280,7 @@ FG are combined 2pts &amp; 3pts</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3g1-Z6-LZu"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Info" id="I7F-vp-Jkt"/>
+                    <navigationItem key="navigationItem" title="INFO" id="I7F-vp-Jkt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ox-yS-clO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1415,7 +1421,7 @@ FG are combined 2pts &amp; 3pts</string>
                         <viewLayoutGuide key="safeArea" id="eKs-GL-ZdV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Player" image="Players" id="lZd-P1-BOa"/>
-                    <navigationItem key="navigationItem" title="New Player" id="4pV-sM-p1C">
+                    <navigationItem key="navigationItem" title="NEW PLAYER" id="4pV-sM-p1C">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="XHU-Dp-N0d"/>
                     </navigationItem>
                 </viewController>
@@ -1471,23 +1477,30 @@ FG are combined 2pts &amp; 3pts</string>
             </objects>
             <point key="canvasLocation" x="1775" y="-692"/>
         </scene>
-        <!--Simple Stats-->
+        <!--SIMPLE STATS-->
         <scene sceneID="auT-z5-WPt">
             <objects>
                 <tableViewController id="7Go-qZ-SgS" customClass="SideMenuVC" customModule="Basketball" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="yaH-nC-DYB">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="yaH-nC-DYB">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Tint"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" name="Dark BG"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Mcs-bZ-3Ja">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="59"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-lB-kUt">
-                                    <rect key="frame" x="8" y="19" width="53" height="21"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Vt-Ya-T6g">
+                                    <rect key="frame" x="8" y="8" width="41" height="43"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rylan evans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-lB-kUt">
+                                    <rect key="frame" x="57" y="19" width="99" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="17"/>
+                                    <color key="textColor" name="Text"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -1500,7 +1513,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="59" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="unj-EQ-XCt" id="N9G-Q9-RXd">
-                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryd-Mj-25q">
@@ -1517,7 +1530,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="103" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jwQ-Rp-67W" id="atc-zy-n5a">
-                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBa-Xk-GoB">
@@ -1534,7 +1547,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="147" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cJS-nV-q7j" id="lDx-wA-vVg">
-                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUF-fw-gCC">
@@ -1555,7 +1568,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="227" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hrd-Z8-9yL" id="QlC-4S-U5l">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QM-xn-OUS">
@@ -1572,7 +1585,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="271" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ccy-Lb-l6a" id="tz2-Q3-66x">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyM-kJ-wbl">
@@ -1589,7 +1602,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="315" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B25-cY-Sfk" id="0ZF-vC-PrR">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Report a problem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRV-cz-9kg">
@@ -1606,7 +1619,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="359" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q9S-0m-UHQ" id="Pvq-f7-rkJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggestions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljP-FI-IzV">
@@ -1627,7 +1640,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="439" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wVK-5v-0Qa" id="95M-Bc-uUi">
-                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-cd-inK">
@@ -1644,7 +1657,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="483" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xSQ-2j-RuA" id="NdW-HD-s75">
-                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZw-0D-2O8">
@@ -1665,7 +1678,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="563" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="emF-bs-vM9" id="evH-IA-48u">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ads Removed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWe-bu-gJT">
@@ -1682,7 +1695,7 @@ FG are combined 2pts &amp; 3pts</string>
                                         <rect key="frame" x="0.0" y="607" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jtH-8V-SIo" id="9Pa-bv-XnI">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="208" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share Enabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J03-fQ-VlR">
@@ -1703,13 +1716,13 @@ FG are combined 2pts &amp; 3pts</string>
                             <outlet property="delegate" destination="7Go-qZ-SgS" id="kcV-ZK-uTl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Simple Stats" largeTitleDisplayMode="never" id="Lf4-kH-hD1"/>
+                    <navigationItem key="navigationItem" title="SIMPLE STATS" largeTitleDisplayMode="never" id="Lf4-kH-hD1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKs-5t-oW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2328" y="287"/>
+            <point key="canvasLocation" x="2328" y="286.50674662668666"/>
         </scene>
-        <!--Players-->
+        <!--PLAYERS-->
         <scene sceneID="YUv-De-bVS">
             <objects>
                 <collectionViewController id="r8k-9Z-SEy" customClass="PlayersCVC" customModule="Basketball" customModuleProvider="target" sceneMemberID="viewController">
@@ -1741,7 +1754,7 @@ FG are combined 2pts &amp; 3pts</string>
                             <outlet property="delegate" destination="r8k-9Z-SEy" id="hCP-c0-S8X"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Players" id="c6T-Xa-N95">
+                    <navigationItem key="navigationItem" title="PLAYERS" id="c6T-Xa-N95">
                         <barButtonItem key="backBarButtonItem" title=" " id="kAP-HK-FJZ"/>
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="WM6-sD-KX7">
                             <connections>
@@ -1766,7 +1779,7 @@ FG are combined 2pts &amp; 3pts</string>
             </objects>
             <point key="canvasLocation" x="4103.1999999999998" y="294.60269865067471"/>
         </scene>
-        <!--Games-->
+        <!--GAMES-->
         <scene sceneID="TGR-Cf-dMD">
             <objects>
                 <tableViewController id="eCe-mu-amr" sceneMemberID="viewController">
@@ -1789,7 +1802,7 @@ FG are combined 2pts &amp; 3pts</string>
                             <outlet property="delegate" destination="eCe-mu-amr" id="bL0-z8-wV2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Games" id="kE3-bS-Oz3"/>
+                    <navigationItem key="navigationItem" title="GAMES" id="kE3-bS-Oz3"/>
                     <connections>
                         <segue destination="oDr-QA-oBp" kind="show" identifier="ShowGameStats" id="AuD-7a-gB0"/>
                     </connections>
@@ -1798,7 +1811,7 @@ FG are combined 2pts &amp; 3pts</string>
             </objects>
             <point key="canvasLocation" x="1705" y="1207"/>
         </scene>
-        <!--Stats-->
+        <!--STATS-->
         <scene sceneID="jCs-Vf-suC">
             <objects>
                 <collectionViewController id="8Xr-UD-5ed" sceneMemberID="viewController">
@@ -1827,13 +1840,13 @@ FG are combined 2pts &amp; 3pts</string>
                             <outlet property="delegate" destination="8Xr-UD-5ed" id="KBV-ZU-TDs"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Stats" id="q8Q-w1-aEt"/>
+                    <navigationItem key="navigationItem" title="STATS" id="q8Q-w1-aEt"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAf-Mj-POV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2436" y="1207"/>
         </scene>
-        <!--Help-->
+        <!--HELP-->
         <scene sceneID="8fL-F9-grR">
             <objects>
                 <tableViewController id="XI8-Dk-v0R" sceneMemberID="viewController">
@@ -1868,13 +1881,13 @@ FG are combined 2pts &amp; 3pts</string>
                             <outlet property="delegate" destination="XI8-Dk-v0R" id="A5I-Q4-BiM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Help" id="LN1-9g-n54"/>
+                    <navigationItem key="navigationItem" title="HELP" id="LN1-9g-n54"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gA-id-g0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3164" y="1207"/>
         </scene>
-        <!--Developer-->
+        <!--DEVELOPER-->
         <scene sceneID="spD-5p-stP">
             <objects>
                 <tableViewController id="NTV-LC-VBp" sceneMemberID="viewController">
@@ -1906,7 +1919,7 @@ FG are combined 2pts &amp; 3pts</string>
                             <outlet property="delegate" destination="NTV-LC-VBp" id="qMO-18-1XT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Developer" id="PjJ-4v-0Cs"/>
+                    <navigationItem key="navigationItem" title="DEVELOPER" id="PjJ-4v-0Cs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Reu-Hx-mSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1920,6 +1933,16 @@ FG are combined 2pts &amp; 3pts</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Hqf-M3-HVL">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Light BG"/>
+                        <color key="tintColor" name="Tint"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="17"/>
+                            <color key="textColor" name="Text"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="26"/>
+                            <color key="textColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1938,6 +1961,16 @@ FG are combined 2pts &amp; 3pts</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="L2F-mc-csc">
                         <rect key="frame" x="0.0" y="20" width="240" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="Tint"/>
+                        <color key="barTintColor" name="Accent"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1974,6 +2007,21 @@ FG are combined 2pts &amp; 3pts</string>
         <image name="info" width="30" height="30"/>
         <image name="jersey" width="35" height="35"/>
         <image name="reply" width="200" height="200"/>
+        <namedColor name="Accent">
+            <color red="0.33700001239776611" green="0.52899998426437378" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark BG">
+            <color red="0.51399999856948853" green="0.18799999356269836" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light BG">
+            <color red="0.99199998378753662" green="0.94099998474121094" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.6589999794960022" green="0.31000000238418579" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tint">
+            <color red="0.95300000905990601" green="0.69800001382827759" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kYA-nF-iZy"/>

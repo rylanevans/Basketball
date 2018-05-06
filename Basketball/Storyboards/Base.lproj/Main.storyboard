@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11849" y="-14"/>
+            <point key="canvasLocation" x="12788" y="-14.842578710644679"/>
         </scene>
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10719.200000000001" y="743.47826086956525"/>
+            <point key="canvasLocation" x="11658.4" y="743.47826086956525"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -72,7 +72,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9025" y="-156"/>
+            <point key="canvasLocation" x="9964" y="-156.07196401799101"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
@@ -115,7 +115,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12596" y="-14"/>
+            <point key="canvasLocation" x="13535.200000000001" y="-14.842578710644679"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -131,7 +131,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9964" y="743.47826086956525"/>
+            <point key="canvasLocation" x="10903.200000000001" y="743.47826086956525"/>
         </scene>
         <!--Game Stats-->
         <scene sceneID="faY-av-uhk">
@@ -1106,7 +1106,7 @@ clear all stats?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bW1-Bw-qmi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4778" y="287"/>
+            <point key="canvasLocation" x="5716" y="286.50674662668666"/>
         </scene>
         <!--Info-->
         <scene sceneID="ft4-fc-1u2">
@@ -1421,7 +1421,7 @@ FG are combined 2pts &amp; 3pts</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDB-Rf-4Fv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3942" y="287"/>
+            <point key="canvasLocation" x="4880.8000000000002" y="286.50674662668666"/>
         </scene>
         <!--ContainerVC-->
         <scene sceneID="7M1-Rh-LWV">
@@ -1441,7 +1441,7 @@ FG are combined 2pts &amp; 3pts</string>
                                     <constraint firstAttribute="width" constant="240" id="B3k-7h-AoC"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="7Go-qZ-SgS" kind="embed" id="y1L-6R-v4h"/>
+                                    <segue destination="usE-Na-cys" kind="embed" id="y1L-6R-v4h"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dX4-pM-fih">
@@ -1471,7 +1471,7 @@ FG are combined 2pts &amp; 3pts</string>
             </objects>
             <point key="canvasLocation" x="1775" y="-692"/>
         </scene>
-        <!--Side MenuVC-->
+        <!--Simple Stats-->
         <scene sceneID="auT-z5-WPt">
             <objects>
                 <tableViewController id="7Go-qZ-SgS" customClass="SideMenuVC" customModule="Basketball" customModuleProvider="target" sceneMemberID="viewController">
@@ -1483,8 +1483,8 @@ FG are combined 2pts &amp; 3pts</string>
                             <rect key="frame" x="0.0" y="0.0" width="240" height="59"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Simple Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-lB-kUt">
-                                    <rect key="frame" x="8" y="19" width="102" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-lB-kUt">
+                                    <rect key="frame" x="8" y="19" width="53" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -1496,11 +1496,11 @@ FG are combined 2pts &amp; 3pts</string>
                         <sections>
                             <tableViewSection id="IIc-Kk-Fde">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="unj-EQ-XCt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="unj-EQ-XCt">
                                         <rect key="frame" x="0.0" y="59" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="unj-EQ-XCt" id="N9G-Q9-RXd">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryd-Mj-25q">
@@ -1513,11 +1513,11 @@ FG are combined 2pts &amp; 3pts</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jwQ-Rp-67W">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="jwQ-Rp-67W">
                                         <rect key="frame" x="0.0" y="103" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jwQ-Rp-67W" id="atc-zy-n5a">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBa-Xk-GoB">
@@ -1530,11 +1530,11 @@ FG are combined 2pts &amp; 3pts</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cJS-nV-q7j">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="cJS-nV-q7j">
                                         <rect key="frame" x="0.0" y="147" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cJS-nV-q7j" id="lDx-wA-vVg">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUF-fw-gCC">
@@ -1623,11 +1623,11 @@ FG are combined 2pts &amp; 3pts</string>
                             </tableViewSection>
                             <tableViewSection id="6HA-17-Vpb">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wVK-5v-0Qa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="wVK-5v-0Qa">
                                         <rect key="frame" x="0.0" y="439" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wVK-5v-0Qa" id="95M-Bc-uUi">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-cd-inK">
@@ -1640,11 +1640,11 @@ FG are combined 2pts &amp; 3pts</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xSQ-2j-RuA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="xSQ-2j-RuA">
                                         <rect key="frame" x="0.0" y="483" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xSQ-2j-RuA" id="NdW-HD-s75">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZw-0D-2O8">
@@ -1661,11 +1661,11 @@ FG are combined 2pts &amp; 3pts</string>
                             </tableViewSection>
                             <tableViewSection id="47Z-AT-fGI">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="emF-bs-vM9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="emF-bs-vM9">
                                         <rect key="frame" x="0.0" y="563" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="emF-bs-vM9" id="evH-IA-48u">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ads Removed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWe-bu-gJT">
@@ -1678,11 +1678,11 @@ FG are combined 2pts &amp; 3pts</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jtH-8V-SIo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="jtH-8V-SIo">
                                         <rect key="frame" x="0.0" y="607" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jtH-8V-SIo" id="9Pa-bv-XnI">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share Enabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J03-fQ-VlR">
@@ -1703,10 +1703,11 @@ FG are combined 2pts &amp; 3pts</string>
                             <outlet property="delegate" destination="7Go-qZ-SgS" id="kcV-ZK-uTl"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Simple Stats" largeTitleDisplayMode="never" id="Lf4-kH-hD1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKs-5t-oW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1745.5999999999999" y="294.60269865067471"/>
+            <point key="canvasLocation" x="2328" y="287"/>
         </scene>
         <!--Players-->
         <scene sceneID="YUv-De-bVS">
@@ -1730,6 +1731,9 @@ FG are combined 2pts &amp; 3pts</string>
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
+                                <connections>
+                                    <segue destination="IJM-SK-bqK" kind="show" identifier="ShowEditPlayer" id="kYA-nF-iZy"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -1738,7 +1742,7 @@ FG are combined 2pts &amp; 3pts</string>
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Players" id="c6T-Xa-N95">
-                        <barButtonItem key="backBarButtonItem" title="Home" id="kAP-HK-FJZ"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="kAP-HK-FJZ"/>
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="WM6-sD-KX7">
                             <connections>
                                 <action selector="onMoreTapped" destination="r8k-9Z-SEy" id="3M7-72-WEQ"/>
@@ -1755,13 +1759,12 @@ FG are combined 2pts &amp; 3pts</string>
                         <segue destination="8Xr-UD-5ed" kind="show" identifier="ShowStats" id="bqH-rH-AbN"/>
                         <segue destination="XI8-Dk-v0R" kind="show" identifier="ShowHelp" id="CzO-Gx-t9J"/>
                         <segue destination="NTV-LC-VBp" kind="show" identifier="ShowDeveloper" id="SUo-Ex-Ai2"/>
-                        <segue destination="IJM-SK-bqK" kind="show" identifier="ShowEditPlayer" id="4Ia-US-r3J"/>
                         <segue destination="oDr-QA-oBp" kind="show" identifier="ShowNewGameStats" id="GpB-fE-JIz"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBw-fb-3hG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3164" y="295"/>
+            <point key="canvasLocation" x="4103.1999999999998" y="294.60269865067471"/>
         </scene>
         <!--Games-->
         <scene sceneID="TGR-Cf-dMD">
@@ -1839,13 +1842,25 @@ FG are combined 2pts &amp; 3pts</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Zgp-A1-pJn">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="acE-w5-8iZ" style="IBUITableViewCellStyleDefault" id="Zgp-A1-pJn">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zgp-A1-pJn" id="9O4-AA-iov">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="acE-w5-8iZ">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4ac-Ew-QND" kind="show" identifier="ShowInfo" id="Fql-Wj-zOE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1854,9 +1869,6 @@ FG are combined 2pts &amp; 3pts</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Help" id="LN1-9g-n54"/>
-                    <connections>
-                        <segue destination="4ac-Ew-QND" kind="show" identifier="ShowInfo" id="4P8-um-BJn"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gA-id-g0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1871,12 +1883,21 @@ FG are combined 2pts &amp; 3pts</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="emH-QF-4K4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oKS-7z-6XJ" style="IBUITableViewCellStyleDefault" id="emH-QF-4K4">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="emH-QF-4K4" id="qdY-FX-pqJ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oKS-7z-6XJ">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -1907,7 +1928,25 @@ FG are combined 2pts &amp; 3pts</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgF-zT-eT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="287"/>
+            <point key="canvasLocation" x="3320.8000000000002" y="286.50674662668666"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O7i-Oc-ros">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="usE-Na-cys" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="L2F-mc-csc">
+                        <rect key="frame" x="0.0" y="20" width="240" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Go-qZ-SgS" kind="relationship" relationship="rootViewController" id="QHx-gV-2cd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aow-W6-1SQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.8" y="294.60269865067471"/>
         </scene>
     </scenes>
     <resources>
@@ -1937,7 +1976,7 @@ FG are combined 2pts &amp; 3pts</string>
         <image name="reply" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Ia-US-r3J"/>
+        <segue reference="kYA-nF-iZy"/>
         <segue reference="GpB-fE-JIz"/>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>

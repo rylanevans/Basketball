@@ -40,6 +40,12 @@ class SideMenuVC: UITableViewController {
                 self.tableView.reloadData()
             default: break
             }
+        case 3:
+            switch indexPath.row {
+            case 0: self.tableView.reloadData()
+            case 1: self.tableView.reloadData()
+            default: break
+            }
         default: break
         }
     }

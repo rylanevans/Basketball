@@ -22,6 +22,7 @@
 		EE399D2C209EA5DF008D642E /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2B209EA5DF008D642E /* ContainerVC.swift */; };
 		EE399D2E209EA601008D642E /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2D209EA601008D642E /* SideMenuVC.swift */; };
 		EE399D30209EA614008D642E /* PlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2F209EA614008D642E /* PlayersVC.swift */; };
+		EE399D32209EC2A1008D642E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D31209EC2A1008D642E /* CollectionViewController.swift */; };
 		EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA1025209033D300F3D66F /* AppDelegate.swift */; };
 		EECA1029209033D300F3D66F /* Basketball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECA1027209033D300F3D66F /* Basketball.xcdatamodeld */; };
 		EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA102A209033D300F3D66F /* MasterViewController.swift */; };
@@ -66,6 +67,7 @@
 		EE399D2B209EA5DF008D642E /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		EE399D2D209EA601008D642E /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		EE399D2F209EA614008D642E /* PlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersVC.swift; sourceTree = "<group>"; };
+		EE399D31209EC2A1008D642E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		EECA1022209033D300F3D66F /* Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basketball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECA1025209033D300F3D66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECA1028209033D300F3D66F /* Basketball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basketball.xcdatamodel; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EECA102A209033D300F3D66F /* MasterViewController.swift */,
+				EE399D31209EC2A1008D642E /* CollectionViewController.swift */,
 				EECA102C209033D300F3D66F /* DetailViewController.swift */,
 				EE399D2B209EA5DF008D642E /* ContainerVC.swift */,
 				EE399D2D209EA601008D642E /* SideMenuVC.swift */,
@@ -371,6 +374,7 @@
 				EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */,
 				EE399D2E209EA601008D642E /* SideMenuVC.swift in Sources */,
 				EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */,
+				EE399D32209EC2A1008D642E /* CollectionViewController.swift in Sources */,
 				EECA102D209033D300F3D66F /* DetailViewController.swift in Sources */,
 				EE399D2C209EA5DF008D642E /* ContainerVC.swift in Sources */,
 				EE399D30209EA614008D642E /* PlayersVC.swift in Sources */,

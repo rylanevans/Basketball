@@ -21,11 +21,19 @@
 		EE399D29209D7126008D642E /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE399D1D209D7125008D642E /* Click.wav */; };
 		EE399D2C209EA5DF008D642E /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2B209EA5DF008D642E /* ContainerVC.swift */; };
 		EE399D2E209EA601008D642E /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2D209EA601008D642E /* SideMenuVC.swift */; };
-		EE399D30209EA614008D642E /* PlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2F209EA614008D642E /* PlayersVC.swift */; };
-		EE399D32209EC2A1008D642E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D31209EC2A1008D642E /* CollectionViewController.swift */; };
+		EE399D30209EA614008D642E /* PlayersCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D2F209EA614008D642E /* PlayersCVC.swift */; };
 		EE399D35209F7653008D642E /* varsity_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE399D34209F7650008D642E /* varsity_regular.ttf */; };
 		EE399D38209F7B88008D642E /* Theme Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE399D37209F7B88008D642E /* Theme Colors.xcassets */; };
 		EE399D3A209F7BCA008D642E /* Side Menu Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE399D39209F7BCA008D642E /* Side Menu Icons.xcassets */; };
+		EE399D3C209FCAB0008D642E /* Pictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE399D3B209FCAB0008D642E /* Pictures.xcassets */; };
+		EE399D3E209FCB21008D642E /* Social Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE399D3D209FCB21008D642E /* Social Media.xcassets */; };
+		EE399D41209FF72B008D642E /* EditPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D40209FF72B008D642E /* EditPlayerVC.swift */; };
+		EE399D4320A013BC008D642E /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4220A013BC008D642E /* GameVC.swift */; };
+		EE399D4520A01482008D642E /* RecentGamesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4420A01482008D642E /* RecentGamesTVC.swift */; };
+		EE399D4720A014AD008D642E /* StatsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4620A014AD008D642E /* StatsCVC.swift */; };
+		EE399D4920A014E2008D642E /* HelpTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4820A014E2008D642E /* HelpTVC.swift */; };
+		EE399D4B20A0150B008D642E /* DeveloperTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4A20A0150B008D642E /* DeveloperTVC.swift */; };
+		EE399D4D20A01548008D642E /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4C20A01548008D642E /* InfoVC.swift */; };
 		EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA1025209033D300F3D66F /* AppDelegate.swift */; };
 		EECA1029209033D300F3D66F /* Basketball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECA1027209033D300F3D66F /* Basketball.xcdatamodeld */; };
 		EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA102A209033D300F3D66F /* MasterViewController.swift */; };
@@ -69,11 +77,19 @@
 		EE399D1D209D7125008D642E /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Click.wav; sourceTree = "<group>"; };
 		EE399D2B209EA5DF008D642E /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		EE399D2D209EA601008D642E /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
-		EE399D2F209EA614008D642E /* PlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersVC.swift; sourceTree = "<group>"; };
-		EE399D31209EC2A1008D642E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EE399D2F209EA614008D642E /* PlayersCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCVC.swift; sourceTree = "<group>"; };
 		EE399D34209F7650008D642E /* varsity_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = varsity_regular.ttf; sourceTree = "<group>"; };
 		EE399D37209F7B88008D642E /* Theme Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Theme Colors.xcassets"; sourceTree = "<group>"; };
 		EE399D39209F7BCA008D642E /* Side Menu Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Side Menu Icons.xcassets"; sourceTree = "<group>"; };
+		EE399D3B209FCAB0008D642E /* Pictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pictures.xcassets; sourceTree = "<group>"; };
+		EE399D3D209FCB21008D642E /* Social Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Social Media.xcassets"; sourceTree = "<group>"; };
+		EE399D40209FF72B008D642E /* EditPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlayerVC.swift; sourceTree = "<group>"; };
+		EE399D4220A013BC008D642E /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		EE399D4420A01482008D642E /* RecentGamesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGamesTVC.swift; sourceTree = "<group>"; };
+		EE399D4620A014AD008D642E /* StatsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCVC.swift; sourceTree = "<group>"; };
+		EE399D4820A014E2008D642E /* HelpTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTVC.swift; sourceTree = "<group>"; };
+		EE399D4A20A0150B008D642E /* DeveloperTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTVC.swift; sourceTree = "<group>"; };
+		EE399D4C20A01548008D642E /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		EECA1022209033D300F3D66F /* Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basketball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECA1025209033D300F3D66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECA1028209033D300F3D66F /* Basketball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basketball.xcdatamodel; sourceTree = "<group>"; };
@@ -127,12 +143,17 @@
 		EE399D0E209D7057008D642E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EECA102A209033D300F3D66F /* MasterViewController.swift */,
-				EE399D31209EC2A1008D642E /* CollectionViewController.swift */,
-				EECA102C209033D300F3D66F /* DetailViewController.swift */,
 				EE399D2B209EA5DF008D642E /* ContainerVC.swift */,
 				EE399D2D209EA601008D642E /* SideMenuVC.swift */,
-				EE399D2F209EA614008D642E /* PlayersVC.swift */,
+				EE399D2F209EA614008D642E /* PlayersCVC.swift */,
+				EE399D40209FF72B008D642E /* EditPlayerVC.swift */,
+				EE399D4220A013BC008D642E /* GameVC.swift */,
+				EE399D4420A01482008D642E /* RecentGamesTVC.swift */,
+				EE399D4620A014AD008D642E /* StatsCVC.swift */,
+				EE399D4820A014E2008D642E /* HelpTVC.swift */,
+				EE399D4C20A01548008D642E /* InfoVC.swift */,
+				EE399D4A20A0150B008D642E /* DeveloperTVC.swift */,
+				EE399D3F209FE2FB008D642E /* Extras */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,8 +172,10 @@
 				EE399D36209F7658008D642E /* Fonts */,
 				EE399D11209D70CD008D642E /* Audio Files */,
 				EECA1031209033D500F3D66F /* Assets.xcassets */,
+				EE399D3B209FCAB0008D642E /* Pictures.xcassets */,
 				EE399D37209F7B88008D642E /* Theme Colors.xcassets */,
 				EE399D39209F7BCA008D642E /* Side Menu Icons.xcassets */,
+				EE399D3D209FCB21008D642E /* Social Media.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -191,6 +214,15 @@
 				EE399D34209F7650008D642E /* varsity_regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EE399D3F209FE2FB008D642E /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				EECA102A209033D300F3D66F /* MasterViewController.swift */,
+				EECA102C209033D300F3D66F /* DetailViewController.swift */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 		EECA1019209033D200F3D66F = {
@@ -357,8 +389,10 @@
 				EE399D25209D7126008D642E /* TurnOver.wav in Resources */,
 				EE399D29209D7126008D642E /* Click.wav in Resources */,
 				EE399D28209D7126008D642E /* Rebound.wav in Resources */,
+				EE399D3C209FCAB0008D642E /* Pictures.xcassets in Resources */,
 				EE399D21209D7126008D642E /* Foul.wav in Resources */,
 				EE399D23209D7126008D642E /* Subtract.wav in Resources */,
+				EE399D3E209FCB21008D642E /* Social Media.xcassets in Resources */,
 				EE399D1F209D7126008D642E /* Clear.wav in Resources */,
 				EECA1035209033D500F3D66F /* LaunchScreen.storyboard in Resources */,
 				EE399D1E209D7126008D642E /* Assist.wav in Resources */,
@@ -391,13 +425,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECA1029209033D300F3D66F /* Basketball.xcdatamodeld in Sources */,
+				EE399D4720A014AD008D642E /* StatsCVC.swift in Sources */,
+				EE399D41209FF72B008D642E /* EditPlayerVC.swift in Sources */,
 				EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */,
+				EE399D4D20A01548008D642E /* InfoVC.swift in Sources */,
 				EE399D2E209EA601008D642E /* SideMenuVC.swift in Sources */,
 				EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */,
-				EE399D32209EC2A1008D642E /* CollectionViewController.swift in Sources */,
+				EE399D4B20A0150B008D642E /* DeveloperTVC.swift in Sources */,
 				EECA102D209033D300F3D66F /* DetailViewController.swift in Sources */,
 				EE399D2C209EA5DF008D642E /* ContainerVC.swift in Sources */,
-				EE399D30209EA614008D642E /* PlayersVC.swift in Sources */,
+				EE399D4320A013BC008D642E /* GameVC.swift in Sources */,
+				EE399D30209EA614008D642E /* PlayersCVC.swift in Sources */,
+				EE399D4920A014E2008D642E /* HelpTVC.swift in Sources */,
+				EE399D4520A01482008D642E /* RecentGamesTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

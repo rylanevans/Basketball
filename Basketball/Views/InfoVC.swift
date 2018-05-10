@@ -1,5 +1,5 @@
 //
-//  InfoVC.swift
+//  DictionaryVC.swift
 //  Basketball
 //
 //  Created by Rylan Evans on 5/6/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfoVC: UIViewController {
+class DictionaryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -32,8 +32,8 @@ class PlayersCVC: UICollectionViewController {
                                                name: NSNotification.Name("ShowStats"),
                                                object: nil)
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(showHelp),
-                                               name: NSNotification.Name("ShowHelp"),
+                                               selector: #selector(showDictionary),
+                                               name: NSNotification.Name("ShowDictionary"),
                                                object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(showDeveloper),
@@ -49,8 +49,8 @@ class PlayersCVC: UICollectionViewController {
         performSegue(withIdentifier: "ShowStats", sender: nil)
     }
     
-    @objc func showHelp() {
-        performSegue(withIdentifier: "ShowHelp", sender: nil)
+    @objc func showDictionary() {
+        performSegue(withIdentifier: "ShowDictionary", sender: nil)
     }
     
     @objc func showDeveloper() {

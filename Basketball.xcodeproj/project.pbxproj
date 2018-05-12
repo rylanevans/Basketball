@@ -32,7 +32,7 @@
 		EE399D4520A01482008D642E /* RecentGamesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4420A01482008D642E /* RecentGamesTVC.swift */; };
 		EE399D4720A014AD008D642E /* StatsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4620A014AD008D642E /* StatsCVC.swift */; };
 		EE399D4B20A0150B008D642E /* DeveloperTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4A20A0150B008D642E /* DeveloperTVC.swift */; };
-		EE399D4D20A01548008D642E /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4C20A01548008D642E /* InfoVC.swift */; };
+		EE399D4D20A01548008D642E /* DictionaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE399D4C20A01548008D642E /* DictionaryVC.swift */; };
 		EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA1025209033D300F3D66F /* AppDelegate.swift */; };
 		EECA1029209033D300F3D66F /* Basketball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECA1027209033D300F3D66F /* Basketball.xcdatamodeld */; };
 		EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA102A209033D300F3D66F /* MasterViewController.swift */; };
@@ -87,7 +87,7 @@
 		EE399D4420A01482008D642E /* RecentGamesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGamesTVC.swift; sourceTree = "<group>"; };
 		EE399D4620A014AD008D642E /* StatsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCVC.swift; sourceTree = "<group>"; };
 		EE399D4A20A0150B008D642E /* DeveloperTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTVC.swift; sourceTree = "<group>"; };
-		EE399D4C20A01548008D642E /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		EE399D4C20A01548008D642E /* DictionaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryVC.swift; sourceTree = "<group>"; };
 		EECA1022209033D300F3D66F /* Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basketball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECA1025209033D300F3D66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECA1028209033D300F3D66F /* Basketball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basketball.xcdatamodel; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				EE399D4220A013BC008D642E /* GameVC.swift */,
 				EE399D4420A01482008D642E /* RecentGamesTVC.swift */,
 				EE399D4620A014AD008D642E /* StatsCVC.swift */,
-				EE399D4C20A01548008D642E /* InfoVC.swift */,
+				EE399D4C20A01548008D642E /* DictionaryVC.swift */,
 				EE399D4A20A0150B008D642E /* DeveloperTVC.swift */,
 				EE399D3F209FE2FB008D642E /* Extras */,
 			);
@@ -425,7 +425,7 @@
 				EE399D4720A014AD008D642E /* StatsCVC.swift in Sources */,
 				EE399D41209FF72B008D642E /* EditPlayerVC.swift in Sources */,
 				EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */,
-				EE399D4D20A01548008D642E /* InfoVC.swift in Sources */,
+				EE399D4D20A01548008D642E /* DictionaryVC.swift in Sources */,
 				EE399D2E209EA601008D642E /* SideMenuVC.swift in Sources */,
 				EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */,
 				EE399D4B20A0150B008D642E /* DeveloperTVC.swift in Sources */,

@@ -13,6 +13,24 @@ class GameVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.9919999838, green: 0.9409999847, blue: 0.6819999814, alpha: 1)
+        
+//        title = "Some Title"
+        
+//        UIApplication.shared.statusBarStyle = .default
+//        navigationController?.navigationBar.shadowImage = UIImage()
+//        let image = UIImage()
+//        navigationController?.navigationBar.setBackgroundImage(image, for: UIBarMetrics.default)
+//        navigationController?.navigationBar.isTranslucent = true
+        
+        //Line under NavigationBar
+//        let barView = UIView(frame: CGRect(x:0, y:(UINavigationController().navigationBar.frame.height + UIApplication.shared.statusBarFrame.height), width:view.frame.width, height:0.6))
+//        barView.backgroundColor=UIColor.red // set any colour you want..
+//        navigationController?.navigationBar.addSubview(barView)
+        
+        //Title Colour
+//        navigationController?.navigationBar.titleTextAtt
+        
 //        firstLbl.text = _firstName
 //        lastLbl.text = _lastName
 //        positionLbl.text = _positionEnter

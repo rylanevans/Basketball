@@ -16,6 +16,8 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.shadowImage = UIImage()
+
+        
 //        self.navigationController?.navigationBar.prefersLargeTitles = true
 //        self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
 //        self.navigationController?.navigationBar.largeTitleTextAttributes = [

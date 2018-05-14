@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class EditPlayerVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+class PlayerEditVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     var B = "B"
     
@@ -47,17 +47,17 @@ class EditPlayerVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        positionPicker.dataSource = self
-        positionPicker.delegate = self
-        
-        
-        let click = Bundle.main.path(forResource: "Click", ofType: "wav")
-        let clickURL = URL(fileURLWithPath: click!)
-        do {
-            try clickSound = AVAudioPlayer(contentsOf: clickURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
+//        positionPicker.dataSource = self
+//        positionPicker.delegate = self
+//        
+//        
+//        let click = Bundle.main.path(forResource: "Click", ofType: "wav")
+//        let clickURL = URL(fileURLWithPath: click!)
+//        do {
+//            try clickSound = AVAudioPlayer(contentsOf: clickURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
         
     }
     

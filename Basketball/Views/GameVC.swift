@@ -13,98 +13,98 @@ class GameVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstLbl.text = _firstName
-        lastLbl.text = _lastName
-        positionLbl.text = _positionEnter
-        numberLbl.text = _numberEnter
-        
-        let swoosh = Bundle.main.path(forResource: "Swoosh", ofType: "wav")
-        let swooshURL = URL(fileURLWithPath: swoosh!)
-        do {
-            try swooshSound = AVAudioPlayer(contentsOf: swooshURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let brick = Bundle.main.path(forResource: "Brick", ofType: "wav")
-        let brickURL = URL(fileURLWithPath: brick!)
-        do {
-            try brickSound = AVAudioPlayer(contentsOf: brickURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let steal = Bundle.main.path(forResource: "Steal", ofType: "wav")
-        let stealURL = URL(fileURLWithPath: steal!)
-        do {
-            try stealSound = AVAudioPlayer(contentsOf: stealURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let assist = Bundle.main.path(forResource: "Assist", ofType: "wav")
-        let assistURL = URL(fileURLWithPath: assist!)
-        do {
-            try assistSound = AVAudioPlayer(contentsOf: assistURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let block = Bundle.main.path(forResource: "Block", ofType: "wav")
-        let blockURL = URL(fileURLWithPath: block!)
-        do {
-            try blockSound = AVAudioPlayer(contentsOf: blockURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let foul = Bundle.main.path(forResource: "Foul", ofType: "wav")
-        let foulURL = URL(fileURLWithPath: foul!)
-        do {
-            try foulSound = AVAudioPlayer(contentsOf: foulURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let rebound = Bundle.main.path(forResource: "Rebound", ofType: "wav")
-        let reboundURL = URL(fileURLWithPath: rebound!)
-        do {
-            try reboundSound = AVAudioPlayer(contentsOf: reboundURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let turnOver = Bundle.main.path(forResource: "TurnOver", ofType: "wav")
-        let turnOverURL = URL(fileURLWithPath: turnOver!)
-        do {
-            try turnOverSound = AVAudioPlayer(contentsOf: turnOverURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let subtract = Bundle.main.path(forResource: "Subtract", ofType: "wav")
-        let subtractURL = URL(fileURLWithPath: subtract!)
-        do {
-            try subtractSound = AVAudioPlayer(contentsOf: subtractURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let clear = Bundle.main.path(forResource: "Clear", ofType: "wav")
-        let clearURL = URL(fileURLWithPath: clear!)
-        do {
-            try clearSound = AVAudioPlayer(contentsOf: clearURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        let click = Bundle.main.path(forResource: "Click", ofType: "wav")
-        let clickURL = URL(fileURLWithPath: click!)
-        do {
-            try clickSound = AVAudioPlayer(contentsOf: clickURL)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
+//        firstLbl.text = _firstName
+//        lastLbl.text = _lastName
+//        positionLbl.text = _positionEnter
+//        numberLbl.text = _numberEnter
+//        
+//        let swoosh = Bundle.main.path(forResource: "Swoosh", ofType: "wav")
+//        let swooshURL = URL(fileURLWithPath: swoosh!)
+//        do {
+//            try swooshSound = AVAudioPlayer(contentsOf: swooshURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let brick = Bundle.main.path(forResource: "Brick", ofType: "wav")
+//        let brickURL = URL(fileURLWithPath: brick!)
+//        do {
+//            try brickSound = AVAudioPlayer(contentsOf: brickURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let steal = Bundle.main.path(forResource: "Steal", ofType: "wav")
+//        let stealURL = URL(fileURLWithPath: steal!)
+//        do {
+//            try stealSound = AVAudioPlayer(contentsOf: stealURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let assist = Bundle.main.path(forResource: "Assist", ofType: "wav")
+//        let assistURL = URL(fileURLWithPath: assist!)
+//        do {
+//            try assistSound = AVAudioPlayer(contentsOf: assistURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let block = Bundle.main.path(forResource: "Block", ofType: "wav")
+//        let blockURL = URL(fileURLWithPath: block!)
+//        do {
+//            try blockSound = AVAudioPlayer(contentsOf: blockURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let foul = Bundle.main.path(forResource: "Foul", ofType: "wav")
+//        let foulURL = URL(fileURLWithPath: foul!)
+//        do {
+//            try foulSound = AVAudioPlayer(contentsOf: foulURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let rebound = Bundle.main.path(forResource: "Rebound", ofType: "wav")
+//        let reboundURL = URL(fileURLWithPath: rebound!)
+//        do {
+//            try reboundSound = AVAudioPlayer(contentsOf: reboundURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let turnOver = Bundle.main.path(forResource: "TurnOver", ofType: "wav")
+//        let turnOverURL = URL(fileURLWithPath: turnOver!)
+//        do {
+//            try turnOverSound = AVAudioPlayer(contentsOf: turnOverURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let subtract = Bundle.main.path(forResource: "Subtract", ofType: "wav")
+//        let subtractURL = URL(fileURLWithPath: subtract!)
+//        do {
+//            try subtractSound = AVAudioPlayer(contentsOf: subtractURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let clear = Bundle.main.path(forResource: "Clear", ofType: "wav")
+//        let clearURL = URL(fileURLWithPath: clear!)
+//        do {
+//            try clearSound = AVAudioPlayer(contentsOf: clearURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//        
+//        let click = Bundle.main.path(forResource: "Click", ofType: "wav")
+//        let clickURL = URL(fileURLWithPath: click!)
+//        do {
+//            try clickSound = AVAudioPlayer(contentsOf: clickURL)
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
     }
     
     @IBAction func cancelGameButtonPressed(_ sender: Any) {

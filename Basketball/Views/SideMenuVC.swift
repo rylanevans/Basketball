@@ -1,5 +1,5 @@
 //
-//  SideMenuVC.swift
+//  SideMenuTVC.swift
 //  Basketball
 //
 //  Created by Rylan Evans on 5/5/18.
@@ -11,10 +11,11 @@ import MessageUI
 import StoreKit
 import SafariServices
 
-class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
+class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.shadowImage = UIImage()
 //        self.navigationController?.navigationBar.prefersLargeTitles = true
 //        self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
 //        self.navigationController?.navigationBar.largeTitleTextAttributes = [
@@ -79,18 +80,24 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
         case 0:
             switch indexPath.row {
             case 0: self.tableView.reloadData()
-            case 1: NotificationCenter.default.post(name: NSNotification.Name("ShowGames"), object: nil)
+            case 1: NotificationCenter.default.post(name: NSNotification.Name("ShowPlayers"), object: nil)
             self.tableView.reloadData()
-            case 2: NotificationCenter.default.post(name: NSNotification.Name("ShowStats"), object: nil)
+            case 2: NotificationCenter.default.post(name: NSNotification.Name("ShowGames"), object: nil)
+            self.tableView.reloadData()
+            case 3: NotificationCenter.default.post(name: NSNotification.Name("ShowStats"), object: nil)
             self.tableView.reloadData()
             default: break
             }
         case 1:
             switch indexPath.row {
             case 0: self.tableView.reloadData()
+                shareWithNetwork()
             case 1: self.tableView.reloadData()
+                checkPositiveOrNegitiveFeedback()
             case 2: self.tableView.reloadData()
+                reportProblem()
             case 3: self.tableView.reloadData()
+                suggestions()
             default: break
             }
         case 2:
@@ -98,6 +105,7 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
             case 0: NotificationCenter.default.post(name: NSNotification.Name("ShowDictionary"), object: nil)
             self.tableView.reloadData()
             case 1: self.tableView.reloadData()
+                runTutorialLink()
             case 2: NotificationCenter.default.post(name: NSNotification.Name("ShowDeveloper"), object: nil)
             self.tableView.reloadData()
             default: break
@@ -157,8 +165,17 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
 //        ad.saveContext()
 //    }
     
+    func runTutorialLink() {
+        let URL = NSURL(string: "https://www.youtube.com/playlist?list=PLbuu8VeGQ5CPn0TcAhk-aN1b1nrIS3Fip")!
+        
+        let videoTutorialsWebVC = SFSafariViewController(url: URL as URL)
+        videoTutorialsWebVC.delegate = self
+        
+        present(videoTutorialsWebVC, animated: true, completion: nil)
+    }
+    
     func checkPositiveOrNegitiveFeedback() {
-        let alertController = UIAlertController(title: "APP FEEDBACK", message: "Are you enjoying the FHE app?", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "APP FEEDBACK", message: "Are you enjoying the Basketball Simple Stats app?", preferredStyle: .alert)
         
         let likeAction = UIAlertAction(title: "✓ Yes", style: .default, handler: {
             alert -> Void in
@@ -177,7 +194,7 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
         alertController.addAction(likeAction)
         alertController.addAction(dislikeAction)
         alertController.addAction(cancelAction)
-        alertController.view.tintColor = #colorLiteral(red: 0.9879999757, green: 0.7409999967, blue: 0.01600000076, alpha: 1)
+        alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
         
         self.present(alertController, animated: true, completion: nil)
     }
@@ -191,7 +208,7 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
         })
         
         alertController.addAction(likeAction)
-        alertController.view.tintColor = #colorLiteral(red: 0.9879999757, green: 0.7409999967, blue: 0.01600000076, alpha: 1)
+        alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
         
         self.present(alertController, animated: true, completion: nil)
     }
@@ -200,7 +217,7 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
 //        counter.feedbackGiven = true
 //        ad.saveContext()
         
-        UIApplication.shared.open(NSURL(string: "itms-apps://itunes.apple.com/app/id1292069519?action=write-review")! as URL, options: ["":""], completionHandler: nil)
+        UIApplication.shared.open(NSURL(string: "itms-apps://itunes.apple.com/app/id1224378809?action=write-review")! as URL, options: ["":""], completionHandler: nil)
     }
     
     // MARK: -  MFMailComposeViewControllerDelegate Method to provide suggestions
@@ -216,7 +233,7 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
         let mailController = MFMailComposeViewController()
         mailController.mailComposeDelegate = self
         mailController.setToRecipients(["rylanevans@hotmail.com"])
-        mailController.setSubject("FHE App Tips")
+        mailController.setSubject("Basketball-SS App Tips")
         mailController.setMessageBody("Please provide details to any feature requests or suggestions on how to improve the app below...\n\n\n\n\nDeveloper Support Information:\n📱 Device Type = \(modelName)\n⚙️ Operating System = \(OSVersion)\n🛠 App Version = \(appVersion ?? "Info not avaliable")", isHTML: false)
         
         self.present(mailController, animated: true, completion: nil)
@@ -228,7 +245,7 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
 //        counter.shared = true
 //        ad.saveContext()
         
-        let string: String = String("Checkout this Family Home Evening App!\n\nhttps://itunes.apple.com/us/app/apple-store/id1292069519")
+        let string: String = String("Check out this Basketball Simple Stats App!\n\nhttps://itunes.apple.com/us/app/apple-store/id1224378809")
         let activityViewController = UIActivityViewController(activityItems: [string], applicationActivities: nil)
         present(activityViewController, animated: true, completion: nil)
     }
@@ -243,7 +260,7 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
         let mailController = MFMailComposeViewController()
         mailController.mailComposeDelegate = self
         mailController.setToRecipients(["rylanevans@hotmail.com"])
-        mailController.setSubject("FHE App Bugs")
+        mailController.setSubject("Basketball-SS App Bugs")
         mailController.setMessageBody("Please provide details to the problem(s) you are experiencing...\n\n\n\n\nDeveloper Support Information:\n📱 Device Type = \(modelName)\n⚙️ Operating System = \(OSVersion)\n🛠 App Version = \(appVersion ?? "Info not avaliable")", isHTML: false)
         
         self.present(mailController, animated: true, completion: nil)
@@ -273,75 +290,19 @@ class SideMenuVC: UITableViewController, MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
-    
-    // Table view set up
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9568627451, alpha: 1)
-        
-        var title = ""
-        if section == 0 {
-            title = "TIP JAR:"
-        } else if section == 1 {
-            title = "FEEDBACK:"
-        } else if section == 2 {
-            title = "INFO:"
-        } else {
-            title = "IDK"
-        }
-        
-        let label = UILabel()
-        label.text = title
-        label.frame = CGRect(x: 15, y:5, width: 200, height: 25)
-        label.font = UIFont(name: "American Typewriter", size: 15)!
-        label.textColor = #colorLiteral(red: 0.006879295688, green: 0.4784864783, blue: 0.9987255931, alpha: 1)
-        view.addSubview(label)
-        
-        return view
-    }
-    
-    // Header height
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
-    }
-    
-    // MARK: - Did select row at calls certain functions
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 {
-            switch indexPath.row {
-            case 0: thankYou()
-            case 1: likeIt()
-            case 2: loveIt()
-            case 3: amazing()
-            default:
-                print("Error with MoreTVC index selection")
-            }
-        } else if indexPath.section == 1 {
-            switch indexPath.row {
-            case 0: shareWithNetwork()
-            case 1: checkPositiveOrNegitiveFeedback()
-            case 2: reportProblem()
-            case 3: suggestions()
-            case 4: subscribe()
-            default:
-                print("Error with MoreTVC index selection")
-            }
-        }
-    }
 }
 
-extension MoreTVC: SFSafariViewControllerDelegate {
+extension SideMenuTVC: SFSafariViewControllerDelegate {
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)
     }
 }
 
-extension MoreTVC: IAPServiceDelege {
-    func iapProductsLoaded() {
-        print("IAP Products loaded")
-    }
-}
+//extension SideMenuTVC: IAPServiceDelege {
+//    func iapProductsLoaded() {
+//        print("IAP Products loaded")
+//    }
+//}
 
 public extension UIDevice {
     

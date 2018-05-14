@@ -65,6 +65,7 @@
 		<string>com.amazon.mobile.shopping.web</string>
 		<string>patreon</string>
 		<string>sms</string>
+		<string>voyager</string>
 	</array>
 </dict>
 </plist>

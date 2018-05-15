@@ -8,9 +8,14 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+//private let reuseIdentifier = "PlayersCell"
 
 class PlayersCVC: UICollectionViewController {
+    
+//    @IBOutlet weak var playersFlowLayout: UICollectionViewFlowLayout!
+    
+    var names = ["Dad", "Lilly", "Reed", "Dad", "Lilly", "Reed"]
+    var images = [UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed"), UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +24,7 @@ class PlayersCVC: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -43,21 +48,29 @@ class PlayersCVC: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return images.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayersCell", for: indexPath)
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayersCell", for: indexPath) as UICollectionViewCell
     
         // Configure the cell
-    
+//        cell.playerPhotoImageView.image = UIImage(named: images[indexPath.row])
+//        configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+//        cell.delegate = self
+        
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Selected row is", indexPath.row)
     }
 
     // MARK: UICollectionViewDelegate
@@ -90,5 +103,11 @@ class PlayersCVC: UICollectionViewController {
     
     }
     */
+    
+    // Function to configure each cell
+//    func configureCell(cell: PlayersCell, indexPath: NSIndexPath) {
+//        let game = gameController.object(at: indexPath as IndexPath)
+//        cell.configureGameCell(game: game)
+//    }
 
 }

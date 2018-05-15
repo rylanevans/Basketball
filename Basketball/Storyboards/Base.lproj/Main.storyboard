@@ -1560,22 +1560,39 @@ clear all stats?</string>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="y6p-za-DHN">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BasketballCardProfileCell" id="y6p-za-DHN" customClass="BasketballCardProfileCell" customModule="Basketball" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="87" width="282" height="429"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="282" height="429"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKP-pY-q2f">
-                                            <rect key="frame" x="110" y="204" width="63" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKP-pY-q2f">
+                                            <rect key="frame" x="20" y="162" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vz6-T3-saC">
+                                            <rect key="frame" x="20" y="20" width="242" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ7-k2-jse">
+                                            <rect key="frame" x="20" y="191" width="33" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" name="Accent"/>
+                                <connections>
+                                    <outlet property="playerFirstNameLabel" destination="WKP-pY-q2f" id="plg-cd-czZ"/>
+                                    <outlet property="playerLastNameLabel" destination="zZ7-k2-jse" id="IzN-ns-3SQ"/>
+                                    <outlet property="playerPhotoImageView" destination="Vz6-T3-saC" id="um1-9r-dHO"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -1618,19 +1635,37 @@ clear all stats?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ugA-SD-MRs">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="181" height="203"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ep1-iJ-Tcd">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayersCell" id="ep1-iJ-Tcd" customClass="PlayersCell" customModule="Basketball" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="181" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="181" height="203"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFq-Yj-6TJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="181" height="148"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPO-av-l3J">
+                                            <rect key="frame" x="42" y="162" width="77" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </view>
+                                <color key="backgroundColor" name="Accent"/>
+                                <connections>
+                                    <outlet property="playerFullNameLabel" destination="lPO-av-l3J" id="uwd-i9-4ag"/>
+                                    <outlet property="playerPhotoImageView" destination="nFq-Yj-6TJ" id="Kp7-6B-P8y"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -1649,7 +1684,7 @@ clear all stats?</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGH-0X-JZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175" y="1212"/>
+            <point key="canvasLocation" x="2173.5999999999999" y="1211.2443778110946"/>
         </scene>
         <!--GAMES-->
         <scene sceneID="TGR-Cf-dMD">
@@ -1660,7 +1695,7 @@ clear all stats?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4gX-M3-L0Q">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GamesCell" id="4gX-M3-L0Q" customClass="GamesCell" customModule="Basketball" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4gX-M3-L0Q" id="Go4-aO-sqn">
@@ -1704,7 +1739,7 @@ clear all stats?</string>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="J4S-TW-wzp">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="J4S-TW-wzp" customClass="StatsCell" customModule="Basketball" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1720,6 +1755,9 @@ clear all stats?</string>
                                         </label>
                                     </subviews>
                                 </view>
+                                <connections>
+                                    <outlet property="titleLabel" destination="88x-gW-ETh" id="1TV-BU-FAr"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -2932,6 +2970,9 @@ I have a passion for sports, family, and technology.  The Basketball Simple Stat
         <namedColor name="Accent">
             <color red="0.33700001239999999" green="0.52899998429999995" blue="0.40799999240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Accent">
+            <color red="0.33700001239776611" green="0.52899998426437378" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Light BG">
             <color red="0.99199998378753662" green="0.94099998474121094" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -2963,7 +3004,7 @@ I have a passion for sports, family, and technology.  The Basketball Simple Stat
     <inferredMetricsTieBreakers>
         <segue reference="oFe-75-Tcn"/>
         <segue reference="PG3-Ew-cbd"/>
-        <segue reference="zLP-NW-xH8"/>
+        <segue reference="Dox-xY-bSq"/>
         <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>

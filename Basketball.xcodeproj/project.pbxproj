@@ -37,6 +37,10 @@
 		EE3CFF0220A9112E008199F2 /* PlayersCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0120A9112E008199F2 /* PlayersCVC.swift */; };
 		EE3CFF0420A9283C008199F2 /* TipJar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3CFF0320A9283C008199F2 /* TipJar.xcassets */; };
 		EE3CFF0620A9447D008199F2 /* AboutMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0520A9447D008199F2 /* AboutMeVC.swift */; };
+		EE3CFF0920AA435E008199F2 /* PlayersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0820AA435E008199F2 /* PlayersCell.swift */; };
+		EE3CFF0B20AA4395008199F2 /* BasketballCardProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0A20AA4395008199F2 /* BasketballCardProfileCell.swift */; };
+		EE3CFF0D20AA49B7008199F2 /* GamesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0C20AA49B7008199F2 /* GamesCell.swift */; };
+		EE3CFF0F20AA4A41008199F2 /* StatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0E20AA4A41008199F2 /* StatsCell.swift */; };
 		EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA1025209033D300F3D66F /* AppDelegate.swift */; };
 		EECA1029209033D300F3D66F /* Basketball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECA1027209033D300F3D66F /* Basketball.xcdatamodeld */; };
 		EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA102A209033D300F3D66F /* MasterViewController.swift */; };
@@ -96,6 +100,10 @@
 		EE3CFF0120A9112E008199F2 /* PlayersCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCVC.swift; sourceTree = "<group>"; };
 		EE3CFF0320A9283C008199F2 /* TipJar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TipJar.xcassets; sourceTree = "<group>"; };
 		EE3CFF0520A9447D008199F2 /* AboutMeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeVC.swift; sourceTree = "<group>"; };
+		EE3CFF0820AA435E008199F2 /* PlayersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCell.swift; sourceTree = "<group>"; };
+		EE3CFF0A20AA4395008199F2 /* BasketballCardProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballCardProfileCell.swift; sourceTree = "<group>"; };
+		EE3CFF0C20AA49B7008199F2 /* GamesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCell.swift; sourceTree = "<group>"; };
+		EE3CFF0E20AA4A41008199F2 /* StatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCell.swift; sourceTree = "<group>"; };
 		EECA1022209033D300F3D66F /* Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basketball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECA1025209033D300F3D66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECA1028209033D300F3D66F /* Basketball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basketball.xcdatamodel; sourceTree = "<group>"; };
@@ -162,6 +170,7 @@
 				EECA102A209033D300F3D66F /* MasterViewController.swift */,
 				EECA102C209033D300F3D66F /* DetailViewController.swift */,
 				EE3CFF0520A9447D008199F2 /* AboutMeVC.swift */,
+				EE3CFF0720AA431A008199F2 /* Cell Details */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +241,17 @@
 				EE3CFEFD20A7D132008199F2 /* InAppServicesPurchases.swift */,
 			);
 			path = "Service Files";
+			sourceTree = "<group>";
+		};
+		EE3CFF0720AA431A008199F2 /* Cell Details */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CFF0820AA435E008199F2 /* PlayersCell.swift */,
+				EE3CFF0A20AA4395008199F2 /* BasketballCardProfileCell.swift */,
+				EE3CFF0C20AA49B7008199F2 /* GamesCell.swift */,
+				EE3CFF0E20AA4A41008199F2 /* StatsCell.swift */,
+			);
+			path = "Cell Details";
 			sourceTree = "<group>";
 		};
 		EECA1019209033D200F3D66F = {
@@ -443,13 +463,17 @@
 				EE399D4D20A01548008D642E /* DictionaryTVC.swift in Sources */,
 				EE399D2E209EA601008D642E /* SideMenuVC.swift in Sources */,
 				EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */,
+				EE3CFF0F20AA4A41008199F2 /* StatsCell.swift in Sources */,
+				EE3CFF0B20AA4395008199F2 /* BasketballCardProfileCell.swift in Sources */,
 				EE399D4B20A0150B008D642E /* DeveloperTVC.swift in Sources */,
 				EECA102D209033D300F3D66F /* DetailViewController.swift in Sources */,
 				EE3CFF0220A9112E008199F2 /* PlayersCVC.swift in Sources */,
 				EE399D2C209EA5DF008D642E /* ContainerVC.swift in Sources */,
+				EE3CFF0920AA435E008199F2 /* PlayersCell.swift in Sources */,
 				EE399D4320A013BC008D642E /* GameVC.swift in Sources */,
 				EE399D30209EA614008D642E /* HomeCVC.swift in Sources */,
 				EE399D4520A01482008D642E /* RecentGamesTVC.swift in Sources */,
+				EE3CFF0D20AA49B7008199F2 /* GamesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

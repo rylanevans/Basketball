@@ -8,9 +8,13 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+//private let reuseIdentifier = "Cell"
 
 class HomeCVC: UICollectionViewController {
+    
+    var firstName = ["STEPHEN", "KEVIN", "LEBRON", "JAMES", "RUSSELL"]
+    var lastName = ["CURRY", "DURANT", "JAMES", "HARDEN", "WESTBROOK"]
+    var images = [UIImage(named: "Stephen"), UIImage(named: "Kevin"), UIImage(named: "LeBron"), UIImage(named: "James"), UIImage(named: "Russell")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,7 @@ class HomeCVC: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         // Do any additional setup after loading the view.
         
@@ -91,11 +95,16 @@ class HomeCVC: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return firstName.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BasketballCardProfileCell", for: indexPath) as! BasketballCardProfileCell
+        
+        // Configure the cell
+        cell.playerPhotoImageView.image = images[indexPath.row]
+        cell.playerFirstNameLabel.text = firstName[indexPath.row]
+        cell.playerLastNameLabel.text = lastName[indexPath.row]
         
         // Configure the cell
         

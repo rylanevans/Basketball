@@ -14,8 +14,8 @@ class PlayersCVC: UICollectionViewController {
     
 //    @IBOutlet weak var playersFlowLayout: UICollectionViewFlowLayout!
     
-    var names = ["Dad", "Lilly", "Reed", "Dad", "Lilly", "Reed"]
-    var images = [UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed"), UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed")]
+    var names = ["DAD", "LILLY", "REED", "DAD", "LILLY", "REED", "DAD", "LILLY", "REED", "DAD", "LILLY", "REED"]
+    var images = [UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed"), UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed"), UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed"), UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,11 +58,14 @@ class PlayersCVC: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayersCell", for: indexPath)
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayersCell", for: indexPath) as UICollectionViewCell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayersCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayersCell", for: indexPath) as! PlayersCell
     
         // Configure the cell
-//        cell.playerPhotoImageView.image = UIImage(named: images[indexPath.row])
+//        cell.playerPhotoImageView.image = UIImage(named: names[indexPath.row])
+//        cell.playerFullNameLabel.text = String(names[indexPath.row])
+        cell.playerPhotoImageView.image = images[indexPath.row]
+        cell.playerFullNameLabel.text = names[indexPath.row]
 //        configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
 //        cell.delegate = self
         

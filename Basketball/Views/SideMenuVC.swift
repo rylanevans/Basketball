@@ -48,21 +48,21 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
         
         var title = ""
         if section == 0 {
-            title = "pages:"
+            title = "Pages:"
         } else if section == 1 {
-            title = "feedback:"
+            title = "Feedback:"
         } else if section == 2 {
-            title = "help:"
+            title = "Help:"
         } else if section == 3 {
-            title = "options:"
+            title = "Options:"
         } else {
-            title = "idk"
+            title = "IDK"
         }
         
         let label = UILabel()
         label.text = title
         label.frame = CGRect(x: 8, y:12, width: 200, height: 25)
-        label.font = UIFont(name: "Varsity", size: 15)!
+        label.font = UIFont(name: "Arial", size: 15)!
         label.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         view.addSubview(label)
         
@@ -115,7 +115,9 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
         case 3:
             switch indexPath.row {
             case 0: self.tableView.reloadData()
+                removeAdsPressed()
             case 1: self.tableView.reloadData()
+                iCouldEnabledPressed()
             default: break
             }
         default: break
@@ -291,6 +293,44 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
+    }
+    
+    func removeAdsPressed() {
+        let alertController = UIAlertController(title: "ADS", message: "Would you like to remove ads for a low one time payment?", preferredStyle: .alert)
+        
+        let likeAction = UIAlertAction(title: "✓ Yes", style: .default, handler: {
+            alert -> Void in
+//            self.removeAds()
+        })
+        
+        let dislikeAction = UIAlertAction(title: "✗ No", style: .default, handler: {
+            (action : UIAlertAction!) -> Void in
+        })
+        
+        alertController.addAction(likeAction)
+        alertController.addAction(dislikeAction)
+        alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func iCouldEnabledPressed() {
+        let alertController = UIAlertController(title: "BACK-UP STORAGE", message: "Would you like to enable iCloud sync as a back-up for all your data?", preferredStyle: .alert)
+        
+        let likeAction = UIAlertAction(title: "✓ Yes", style: .default, handler: {
+            alert -> Void in
+//            self.activateSubscription()
+        })
+        
+        let dislikeAction = UIAlertAction(title: "✗ No", style: .default, handler: {
+            (action : UIAlertAction!) -> Void in
+        })
+        
+        alertController.addAction(likeAction)
+        alertController.addAction(dislikeAction)
+        alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
 }
 

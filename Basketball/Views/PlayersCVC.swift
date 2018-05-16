@@ -12,13 +12,32 @@ import UIKit
 
 class PlayersCVC: UICollectionViewController {
     
-//    @IBOutlet weak var playersFlowLayout: UICollectionViewFlowLayout!
+    @IBOutlet weak var playersFlowLayout: UICollectionViewFlowLayout!
     
     var names = ["DAD", "LILLY", "REED", "DAD", "LILLY", "REED", "DAD", "LILLY", "REED", "DAD", "LILLY", "REED"]
     var images = [UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed"), UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed"), UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed"), UIImage(named: "Dad"), UIImage(named: "Lilly"), UIImage(named: "Reed")]
+    
+    private let leftAndRightPaddings: CGFloat = 32.0
+    private let numberOfItemsPerRow: CGFloat = 2.0
+    private let heightAdjustment: CGFloat = 30.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Option 1
+//        let space: CGFloat = 3.0
+//        let dimension = (self.view.frame.size.width - (2 * space)) / 3.0
+//
+//        playersFlowLayout.minimumInteritemSpacing = space
+//        playersFlowLayout.minimumLineSpacing = space
+//        playersFlowLayout.itemSize = CGSize(width: dimension, height: dimension)
+        
+        // Option 2
+//        let widthTest = (CGRectGetWidth(collectionView!.frame) - leftAndRightPaddings) / numberOfItemsPerRow
+        let width = ((self.view.frame.size.width) - leftAndRightPaddings) / numberOfItemsPerRow
+//        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+//        layout.itemSize = CGSizeMake(width, width + heightAdjustment)
+        playersFlowLayout.itemSize = CGSize(width: width, height: (width + heightAdjustment))
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -126,9 +126,9 @@ class GameVC: UIViewController {
     }
     
     @IBAction func cancelGameButtonPressed(_ sender: Any) {
-        let alertController = UIAlertController(title: "X CANCEL GAME", message: "Are you sure you want to cancel your game?", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "⚠ CANCEL GAME", message: "Are you sure you want to cancel your game?", preferredStyle: .alert)
         
-        let cancelGameAction = UIAlertAction(title: "X Cancel Game", style: .default, handler: {
+        let cancelGameAction = UIAlertAction(title: "✗ Cancel Game", style: .default, handler: {
             alert -> Void in
             self.dismiss(animated: true, completion: nil)
         })
@@ -146,9 +146,9 @@ class GameVC: UIViewController {
     }
     
     @IBAction func saveGameButtonPressed(_ sender: Any) {
-        let alertController = UIAlertController(title: "⟳ END GAME", message: "Is the game over?", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "⚠ END GAME", message: "Is the game over?", preferredStyle: .alert)
         
-        let cancelGameAction = UIAlertAction(title: "✓ End Game", style: .default, handler: {
+        let cancelGameAction = UIAlertAction(title: "✓ Save Game", style: .default, handler: {
             alert -> Void in
             //            self.dismiss(animated: true, completion: nil)
             
@@ -159,7 +159,7 @@ class GameVC: UIViewController {
                 self.dismiss(animated: true, completion: nil)
             })
             
-            let continueGameAction = UIAlertAction(title: "X Lost", style: .default, handler: {
+            let continueGameAction = UIAlertAction(title: "✗ Lost", style: .default, handler: {
                 (action : UIAlertAction!) -> Void in
                 self.dismiss(animated: true, completion: nil)
             })

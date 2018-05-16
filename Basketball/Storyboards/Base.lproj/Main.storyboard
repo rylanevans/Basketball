@@ -339,7 +339,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="hpY-cZ-8s2"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                                        <color key="textColor" red="0.79883803929999997" green="0.41780901660000003" blue="0.21124831860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" name="Accent"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhw-TM-faD">
@@ -348,7 +348,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="uzJ-qU-gYD"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCH-m2-O7o">
@@ -357,7 +357,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="0BS-2G-wav"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTt-bx-09l">
@@ -366,7 +366,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="bdl-zQ-Dsq"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ8-1X-Iic">
@@ -375,7 +375,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="aBi-lh-bRC"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PF " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCv-iv-adM">
@@ -384,7 +384,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="D9B-kc-hOn"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kae-A8-OrD">
@@ -393,7 +393,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="BYi-dp-q4L"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmr-px-JSD">
@@ -402,7 +402,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="Nu9-Jz-pno"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TS%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moQ-rE-lvr">
@@ -411,7 +411,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="j4l-KT-IhI"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -463,7 +463,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="Ttc-Ei-rOC"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
-                                                                        <color key="textColor" red="0.79883803929999997" green="0.41780901660000003" blue="0.21124831860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" name="Accent"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEJ-Cu-Qtt">
@@ -472,7 +472,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="uru-1g-UbH"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyS-2z-Q65">
@@ -481,7 +481,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="u5F-0o-toQ"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxc-bI-IdG">
@@ -490,7 +490,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="FBK-uG-CAy"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7z2-3Q-fZI">
@@ -499,7 +499,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="aot-k2-ahM"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uf-vM-n2T">
@@ -508,7 +508,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="2S3-hR-67d"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aI-Do-LdF">
@@ -517,7 +517,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="eKi-GS-99L"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIX-Vv-wRX">
@@ -526,7 +526,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="TcP-jM-jkU"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPa-zh-6hr">
@@ -535,7 +535,7 @@
                                                                             <constraint firstAttribute="width" constant="37" id="t49-Vm-SZ1"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -585,7 +585,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="sEq-vH-5o1"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FTA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOR-Jt-97t">
@@ -594,7 +594,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="7dV-Lk-nEU"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FT%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srK-4l-vma">
@@ -603,7 +603,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="Zim-qT-Thf"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -627,7 +627,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="eUs-cC-tye"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FGA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU3-Nm-xPm">
@@ -636,7 +636,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="H4L-KB-AmT"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FG% " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhY-7P-1Nb">
@@ -645,7 +645,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="uH3-LW-EKP"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -669,7 +669,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="PPo-xc-Ele"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3PA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keh-c3-pfq">
@@ -678,7 +678,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="sUv-Hd-pkr"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3P%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqg-i0-Kyg">
@@ -687,7 +687,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="P61-Yl-F8P"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -742,7 +742,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="m0C-3X-VHJ"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7G-Lj-hNz">
@@ -751,7 +751,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="6j7-Hf-clU"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-JT-obQ">
@@ -760,7 +760,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="UiI-uk-qli"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <color key="textColor" red="0.79883803929999997" green="0.41780901660000003" blue="0.21124831860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -784,7 +784,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="gv3-31-fng"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJA-3r-jvA">
@@ -793,7 +793,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="A9E-0g-DHk"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMz-B3-b33">
@@ -802,7 +802,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="oCk-Ti-IGg"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <color key="textColor" red="0.79883803929999997" green="0.41780901660000003" blue="0.21124831860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -826,7 +826,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="uhk-kk-eIh"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJQ-J2-kl2">
@@ -835,7 +835,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="sj1-ze-9ux"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtA-Wh-oYb">
@@ -844,7 +844,7 @@
                                                                             <constraint firstAttribute="width" constant="32" id="BOG-w1-CDH"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                                                        <color key="textColor" red="0.79883803929999997" green="0.41780901660000003" blue="0.21124831860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" name="Dark BG"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -887,6 +887,9 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="ftmissBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="w8i-zr-NWy"/>
+                                                                </connections>
                                                             </button>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FreeCC" translatesAutoresizingMaskIntoConstraints="NO" id="54L-D6-Av7">
                                                                 <rect key="frame" x="111" y="0.0" width="121" height="56.5"/>
@@ -903,6 +906,9 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="ftmBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="ERk-QQ-qOp"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -918,6 +924,9 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="fgMissBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="Rru-5k-NF8"/>
+                                                                </connections>
                                                             </button>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FieldCC" translatesAutoresizingMaskIntoConstraints="NO" id="rzX-Tc-7p7">
                                                                 <rect key="frame" x="111" y="0.0" width="121" height="57"/>
@@ -934,6 +943,9 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="fgmBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="bXh-ys-HW6"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -949,6 +961,9 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="threePmissBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="bw2-sS-Nym"/>
+                                                                </connections>
                                                             </button>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThreeCC" translatesAutoresizingMaskIntoConstraints="NO" id="Rxv-gD-VWc">
                                                                 <rect key="frame" x="111" y="0.0" width="121" height="56.5"/>
@@ -965,6 +980,9 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="threePmBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="Coj-1n-63c"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -989,6 +1007,9 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="rebBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="mkv-GM-YUT"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGu-Xl-hlc">
                                                                 <rect key="frame" x="117" y="0.0" width="109" height="88.5"/>
@@ -1002,6 +1023,9 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="astBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="b3B-4w-2O4"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-il-xD7">
                                                                 <rect key="frame" x="234" y="0.0" width="109" height="88.5"/>
@@ -1015,6 +1039,9 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="stlBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="zXy-c6-gSR"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -1033,6 +1060,9 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="blkBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="l0J-gA-DSC"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7c-wn-pqr">
                                                                 <rect key="frame" x="117" y="0.0" width="109" height="88.5"/>
@@ -1046,6 +1076,9 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="pfBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="khM-hK-X0M"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5t-wC-leV">
                                                                 <rect key="frame" x="234" y="0.0" width="109" height="88.5"/>
@@ -1059,6 +1092,9 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tovBtn:" destination="oDr-QA-oBp" eventType="touchUpInside" id="YA1-ON-Sap"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -1079,14 +1115,23 @@
                                     <barButtonItem style="plain" systemItem="fixedSpace" id="wRk-1y-ODY"/>
                                     <barButtonItem image="jersey" id="7Xh-Q8-Jts" userLabel="New Player">
                                         <color key="tintColor" name="Tint"/>
+                                        <connections>
+                                            <action selector="switchPlayerBtn:" destination="oDr-QA-oBp" id="fcV-K9-QeL"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="PxS-bX-0vA"/>
                                     <barButtonItem systemItem="reply" id="gEp-CE-kZx">
                                         <color key="tintColor" name="Tint"/>
+                                        <connections>
+                                            <action selector="subBtn:" destination="oDr-QA-oBp" id="pPJ-nI-ac9"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="N46-LC-zH2"/>
                                     <barButtonItem systemItem="trash" id="2Us-wd-mf7">
                                         <color key="tintColor" name="Tint"/>
+                                        <connections>
+                                            <action selector="trashBtn:" destination="oDr-QA-oBp" id="muG-7p-bMn"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="2q1-FZ-Go7"/>
                                     <barButtonItem image="info" id="ufq-Y3-PeE" userLabel="Info">
@@ -1098,6 +1143,9 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="5K5-HO-OHC"/>
                                     <barButtonItem systemItem="action" id="ND8-8F-Qxi">
                                         <color key="tintColor" name="Tint"/>
+                                        <connections>
+                                            <action selector="shareBtn:" destination="oDr-QA-oBp" id="5ty-Qa-SuF"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="fixedSpace" id="GAk-yx-23p"/>
                                 </items>
@@ -1108,61 +1156,18 @@
                                     <constraint firstAttribute="width" constant="25" id="88S-K8-hxA"/>
                                     <constraint firstAttribute="height" constant="25" id="J58-fB-YoJ"/>
                                 </constraints>
+                                <color key="tintColor" name="Dark BG"/>
                                 <state key="normal" title="SubtractLbl" image="reply"/>
                             </button>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="idp-kH-12O" userLabel="sv Confirm Clean">
-                                <rect key="frame" x="62.5" y="283.5" width="250" height="100"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VW5-gz-ev7">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="3Ed-F2-BkO"/>
-                                            <constraint firstAttribute="width" constant="250" id="8s0-pf-mM2"/>
-                                        </constraints>
-                                        <string key="text">Are you sure you want to
-clear all stats?</string>
-                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ilt-nI-CMY">
-                                        <rect key="frame" x="0.0" y="50" width="250" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLi-t2-XXw" userLabel="ClearNo">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" title="No">
-                                                    <color key="titleColor" red="0.79883803929999997" green="0.41780901660000003" blue="0.21124831860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sli-XE-fCR" userLabel="ClearYes">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="50"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" title="Yes">
-                                                    <color key="titleColor" red="0.79883803929999997" green="0.41780901660000003" blue="0.21124831860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="B4X-Uq-f6y"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="n5R-H4-qHq"/>
-                                </constraints>
-                            </stackView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select something to subtract..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mh-jd-VfD">
-                                <rect key="frame" x="87.5" y="64" width="200" height="55"/>
+                                <rect key="frame" x="87.5" y="64" width="200" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="0eP-g2-JAG"/>
-                                    <constraint firstAttribute="height" constant="55" id="he8-1a-slL"/>
+                                    <constraint firstAttribute="height" constant="75" id="he8-1a-slL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
-                                <color key="textColor" name="Text"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <color key="textColor" name="Dark BG"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1170,10 +1175,8 @@ clear all stats?</string>
                         <constraints>
                             <constraint firstItem="7mh-jd-VfD" firstAttribute="centerX" secondItem="cUP-fz-jPD" secondAttribute="centerX" id="3ZY-Sc-RRS"/>
                             <constraint firstItem="3I1-q2-ycD" firstAttribute="top" secondItem="fMu-9h-DEN" secondAttribute="bottom" id="6Ay-jA-vD0"/>
-                            <constraint firstItem="idp-kH-12O" firstAttribute="centerY" secondItem="cUP-fz-jPD" secondAttribute="centerY" id="AOV-CO-bkd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3I1-q2-ycD" secondAttribute="trailing" id="Ett-GO-MCp"/>
                             <constraint firstItem="7mh-jd-VfD" firstAttribute="top" secondItem="fMu-9h-DEN" secondAttribute="bottom" id="Rfk-zY-Z20"/>
-                            <constraint firstItem="idp-kH-12O" firstAttribute="centerX" secondItem="cUP-fz-jPD" secondAttribute="centerX" id="cZF-TM-KTt"/>
                             <constraint firstItem="iGz-Nr-2N2" firstAttribute="top" secondItem="fMu-9h-DEN" secondAttribute="bottom" constant="4" id="pu5-ME-mFX"/>
                             <constraint firstAttribute="trailing" secondItem="V0B-uJ-Pzi" secondAttribute="trailing" id="rWx-hG-PLL"/>
                             <constraint firstItem="OMG-0F-m7X" firstAttribute="top" secondItem="V0B-uJ-Pzi" secondAttribute="bottom" id="sIB-g6-k15"/>
@@ -1197,6 +1200,32 @@ clear all stats?</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstLbl" destination="7JB-Kk-YJS" id="i1J-cg-0xc"/>
+                        <outlet property="gm3paLbl" destination="RJQ-J2-kl2" id="2t3-h6-RwP"/>
+                        <outlet property="gm3pmLbl" destination="HLD-Pw-Dqu" id="gJO-U5-hSO"/>
+                        <outlet property="gm3ppLbl" destination="wtA-Wh-oYb" id="QeC-nt-q9f"/>
+                        <outlet property="gmAstLbl" destination="uyS-2z-Q65" id="7Fy-sm-Vlk"/>
+                        <outlet property="gmBlkLbl" destination="7z2-3Q-fZI" id="NnZ-9h-6W9"/>
+                        <outlet property="gmEffLbl" destination="IIX-Vv-wRX" id="FTs-e9-xl1"/>
+                        <outlet property="gmFgaLbl" destination="FJA-3r-jvA" id="70N-28-0GI"/>
+                        <outlet property="gmFgmLbl" destination="jDc-Lw-XVt" id="jrm-Bh-EmJ"/>
+                        <outlet property="gmFgpLbl" destination="IMz-B3-b33" id="PkM-8S-6wh"/>
+                        <outlet property="gmFtaLbl" destination="p7G-Lj-hNz" id="YEB-1P-pR5"/>
+                        <outlet property="gmFtmLbl" destination="I71-tB-Z7P" id="Shh-na-1hX"/>
+                        <outlet property="gmFtpLbl" destination="WNh-JT-obQ" id="7ja-J1-YoM"/>
+                        <outlet property="gmPfLbl" destination="4Uf-vM-n2T" id="AUv-Dh-cbA"/>
+                        <outlet property="gmPtsLbl" destination="ox3-AS-S0u" id="W0I-xh-PCv"/>
+                        <outlet property="gmRebLbl" destination="aEJ-Cu-Qtt" id="ZN1-Sj-DIX"/>
+                        <outlet property="gmStlLbl" destination="Nxc-bI-IdG" id="p0Y-ai-2UI"/>
+                        <outlet property="gmTovLbl" destination="4aI-Do-LdF" id="Q8W-aY-njc"/>
+                        <outlet property="gmTspLbl" destination="rPa-zh-6hr" id="iOL-IU-Jl9"/>
+                        <outlet property="lastLbl" destination="BWz-ep-vIF" id="Mc4-ER-iRR"/>
+                        <outlet property="numberLbl" destination="vnz-aH-qiN" id="BGN-g0-2Qd"/>
+                        <outlet property="positionLbl" destination="stQ-f3-fJ6" id="P5T-2W-ny9"/>
+                        <outlet property="subLbl" destination="7mh-jd-VfD" id="YFY-bA-vLP"/>
+                        <outlet property="subtractLbl" destination="3I1-q2-ycD" id="Iwg-D2-VLg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bW1-Bw-qmi" sceneMemberID="firstResponder"/>
             </objects>
@@ -1845,7 +1874,7 @@ clear all stats?</string>
                                                     <rect key="frame" x="16" y="23.5" width="160" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1870,7 +1899,7 @@ clear all stats?</string>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">A rebound occurs when a player recovers the ball after a missed shot. This statistic is the number of total rebounds a player has collected on either offense or defense.</string>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1895,7 +1924,7 @@ clear all stats?</string>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">The number of assists, passes that lead directly to a made basket, by a player (usually no more than 2 dribbles after the pass).</string>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1919,7 +1948,7 @@ clear all stats?</string>
                                                     <rect key="frame" x="16" y="15.5" width="321" height="34"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1943,7 +1972,7 @@ clear all stats?</string>
                                                     <rect key="frame" x="16" y="6.5" width="343" height="51"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1967,7 +1996,7 @@ clear all stats?</string>
                                                     <rect key="frame" x="16" y="23.5" width="274.5" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1991,7 +2020,7 @@ clear all stats?</string>
                                                     <rect key="frame" x="16" y="15.5" width="336" height="34"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2018,7 +2047,7 @@ clear all stats?</string>
 
 Formula: [PTS+REB+AST+STL+BLK-(FGA-FGM)-(FTA-FTM)-TO]/(Games Played)</string>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2032,20 +2061,20 @@ Formula: [PTS+REB+AST+STL+BLK-(FGA-FGM)-(FTA-FTM)-TO]/(Games Played)</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="TS％ = TRUE SHOOTING PERCENTAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bfc-2p-wcE">
-                                                    <rect key="frame" x="16" y="-31" width="292.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="-56" width="292.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="17"/>
                                                     <color key="textColor" name="Text"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zDK-ws-ppE">
-                                                    <rect key="frame" x="16" y="-10.5" width="343" height="85"/>
+                                                    <rect key="frame" x="16" y="-35.5" width="343" height="136"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <string key="text">A shooting percentage that factors in the value of three-point field goals and free throws in addition to conventional two-point.
+                                                    <string key="text">TS% is a statistic that measures a player's efficiency at shooting the ball. It is intended to more accurately calculate a player's shooting than field goal percentage, free throw percentage, and three-point field goal percentage taken individually. Two- and three-point field goals and free throws are all considered in its calculation.
 
-Formula: PTS/[2*(FGA+0.44*FTA)]</string>
+Formula: PTS/[2*(FGA+0.44*FTA)]*100</string>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2069,7 +2098,7 @@ Formula: PTS/[2*(FGA+0.44*FTA)]</string>
                                                     <rect key="frame" x="16" y="23.5" width="285" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2093,7 +2122,7 @@ Formula: PTS/[2*(FGA+0.44*FTA)]</string>
                                                     <rect key="frame" x="16" y="23.5" width="311.5" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2120,7 +2149,7 @@ Formula: PTS/[2*(FGA+0.44*FTA)]</string>
 
 Formula: FTM/FTA</string>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2144,7 +2173,7 @@ Formula: FTM/FTA</string>
                                                     <rect key="frame" x="16" y="15.5" width="305" height="34"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2168,7 +2197,7 @@ Formula: FTM/FTA</string>
                                                     <rect key="frame" x="16" y="15.5" width="332" height="34"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2182,20 +2211,20 @@ Formula: FTM/FTA</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="FG％ = FIELD GOAL PERCENTAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EDt-Nq-JkP">
-                                                    <rect key="frame" x="15" y="-14" width="255" height="20.5"/>
+                                                    <rect key="frame" x="16" y="-14" width="255" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="17"/>
                                                     <color key="textColor" name="Text"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vmM-7a-pAc">
-                                                    <rect key="frame" x="15" y="6.5" width="345" height="51"/>
+                                                    <rect key="frame" x="16" y="6.5" width="343" height="51"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">The percentage of field goal attempts that a player makes.
 
 Formula: FGM/FGA</string>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2209,17 +2238,17 @@ Formula: FGM/FGA</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="3PM = 3 POINT FIELD GOALS MADE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yNo-y8-YNf">
-                                                    <rect key="frame" x="15" y="3" width="274.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="3" width="274.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="17"/>
                                                     <color key="textColor" name="Text"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="The number of 3 point field goals that a player has made." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EXE-RG-mi3">
-                                                    <rect key="frame" x="15" y="23.5" width="319" height="17"/>
+                                                    <rect key="frame" x="16" y="23.5" width="319" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2233,17 +2262,17 @@ Formula: FGM/FGA</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="3PA = 3 POINT FIELD GOALS ATTEMPTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h8C-XJ-ATg">
-                                                    <rect key="frame" x="15" y="-5" width="320.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="-5" width="320.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="17"/>
                                                     <color key="textColor" name="Text"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="The number of 3 point field goals that a player has attempted." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F9a-da-WtL">
-                                                    <rect key="frame" x="15" y="15.5" width="265" height="34"/>
+                                                    <rect key="frame" x="16" y="15.5" width="265" height="34"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2257,20 +2286,20 @@ Formula: FGM/FGA</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="3P％ = 3 POINT FIELD GOALS PERCENTAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fqK-VY-Bhw">
-                                                    <rect key="frame" x="15" y="-22" width="335.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="-22" width="335.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="17"/>
                                                     <color key="textColor" name="Text"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hca-xp-zdC">
-                                                    <rect key="frame" x="15" y="-1.5" width="345" height="68"/>
+                                                    <rect key="frame" x="16" y="-1.5" width="343" height="68"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">The percentage of 3 point field goal attempts that a player makes.
 
 Formula: 3PM/3PA</string>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Dark BG"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -3135,7 +3164,7 @@ I am an independent app developer.  I would appreciate your support.
 
 I have a passion for sports, family, and technology.  The Basketball Simple Stats app combines all three passions.  I have spent a lot of time building this app with the hope it can be a useful tool to help track and share player stats. Please consider a donation.  Thank you for dowloading the Simple Stats app.</string>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" name="Dark BG"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
@@ -3374,6 +3403,9 @@ I have a passion for sports, family, and technology.  The Basketball Simple Stat
         <image name="reply" width="200" height="200"/>
         <namedColor name="Accent">
             <color red="0.33700001239776611" green="0.52899998426437378" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark BG">
+            <color red="0.51399999856948853" green="0.18799999356269836" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Light BG">
             <color red="0.99199998378753662" green="0.94099998474121094" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

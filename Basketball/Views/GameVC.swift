@@ -280,6 +280,10 @@ class GameVC: UIViewController {
     
     var subtractIsActive: Bool = false
     
+    var first = "Lilly"
+    var last = "Evans"
+    var position = "PG"
+    var number = "11"
     var gmPts = 0
     var gmReb = 0
     var gmAst = 0
@@ -303,9 +307,9 @@ class GameVC: UIViewController {
     @IBAction func subBtn(_ sender: UIBarButtonItem) {
         playClick()
         if subtractIsActive == false {
-            return subOn()
+            subOn()
         } else {
-            return subOff()
+            subOff()
         }
     }
     
@@ -324,10 +328,10 @@ class GameVC: UIViewController {
     
     
     func playSubtract() {
-        if subtractSound.isPlaying {
-            subtractSound.stop()
-        }
-        subtractSound.play()
+//        if subtractSound.isPlaying {
+//            subtractSound.stop()
+//        }
+//        subtractSound.play()
     }
     
     
@@ -394,73 +398,73 @@ class GameVC: UIViewController {
     }
     
     func playClear() {
-        if clearSound.isPlaying {
-            clearSound.stop()
-        }
-        clearSound.play()
+//        if clearSound.isPlaying {
+//            clearSound.stop()
+//        }
+//        clearSound.play()
     }
     
     func playSwoosh() {
-        if swooshSound.isPlaying {
-            swooshSound.stop()
-        }
-        swooshSound.play()
+//        if swooshSound.isPlaying {
+//            swooshSound.stop()
+//        }
+//        swooshSound.play()
     }
     
     func playBrick() {
-        if brickSound.isPlaying {
-            brickSound.stop()
-        }
-        brickSound.play()
+//        if brickSound.isPlaying {
+//            brickSound.stop()
+//        }
+//        brickSound.play()
     }
     
     func playSteal() {
-        if stealSound.isPlaying {
-            stealSound.stop()
-        }
-        stealSound.play()
+//        if stealSound.isPlaying {
+//            stealSound.stop()
+//        }
+//        stealSound.play()
     }
     
     func playAssist() {
-        if assistSound.isPlaying {
-            assistSound.stop()
-        }
-        assistSound.play()
+//        if assistSound.isPlaying {
+//            assistSound.stop()
+//        }
+//        assistSound.play()
     }
     
     func playBlock() {
-        if blockSound.isPlaying {
-            blockSound.stop()
-        }
-        blockSound.play()
+//        if blockSound.isPlaying {
+//            blockSound.stop()
+//        }
+//        blockSound.play()
     }
     
     func playFoul() {
-        if foulSound.isPlaying {
-            foulSound.stop()
-        }
-        foulSound.play()
+//        if foulSound.isPlaying {
+//            foulSound.stop()
+//        }
+//        foulSound.play()
     }
     
     func playRebound() {
-        if reboundSound.isPlaying {
-            reboundSound.stop()
-        }
-        reboundSound.play()
+//        if reboundSound.isPlaying {
+//            reboundSound.stop()
+//        }
+//        reboundSound.play()
     }
     
     func playTurnOver() {
-        if turnOverSound.isPlaying {
-            turnOverSound.stop()
-        }
-        turnOverSound.play()
+//        if turnOverSound.isPlaying {
+//            turnOverSound.stop()
+//        }
+//        turnOverSound.play()
     }
     
     func playClick() {
-        if clickSound.isPlaying {
-            clickSound.stop()
-        }
-        clickSound.play()
+//        if clickSound.isPlaying {
+//            clickSound.stop()
+//        }
+//        clickSound.play()
     }
     
     @IBAction func ftmBtn(_ sender: Any) {
@@ -625,49 +629,9 @@ class GameVC: UIViewController {
         }
     }
     
-    
     @IBOutlet weak var subLbl: UILabel!
     
-    @IBOutlet weak var clearQuestion: UILabel!
-    
-    @IBOutlet weak var clearNo: UIButton!
-    
-    @IBOutlet weak var clearYes: UIButton!
-    
-    @IBOutlet weak var svConfirmClear: UIStackView!
-    
-    func toggleHide() {
-        clearQuestion.layer.borderWidth = 0.25
-        clearNo.layer.borderWidth = 0.25
-        clearYes.layer.borderWidth = 0.25
-        if svConfirmClear.isHidden == true {
-            return svConfirmClear.isHidden = false
-        } else {
-            return svConfirmClear.isHidden = true
-        }
-    }
-    
-    @IBAction func helpBtn(_ sender: Any) {
-        playClick()
-    }
-    
-    @IBAction func playerBtn(_ sender: Any) {
-        playClick()
-    }
-    
-    @IBAction func trashBtn(_ sender: Any) {
-        playClick()
-        toggleHide()
-    }
-    
-    @IBAction func clrBtnNo(_ sender: Any) {
-        playClick()
-        toggleHide()
-    }
-    
-    @IBAction func clrBtn(_ sender: Any) {
-        playClear()
-        toggleHide()
+    func resetGame() {
         gmPts = 0
         gmReb = 0
         gmAst = 0
@@ -689,17 +653,48 @@ class GameVC: UIViewController {
         refreshLabels()
     }
     
+    @IBAction func switchPlayerBtn(_ sender: Any) {
+//        playClick()
+        let alertController = UIAlertController(title: "SWITCH PLAYER", message: "Select a player...", preferredStyle: .alert)
+        
+        let continueGameAction = UIAlertAction(title: "OK", style: .default, handler: {
+            (action : UIAlertAction!) -> Void in
+        })
+        
+        alertController.addAction(continueGameAction)
+        
+        alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
     
-    @IBAction func sendBtn(_ sender: Any) {
-        playClick()
-        let string: String = "Game stats for\n\(firstName) \(lastName) \(positionEnter) #\(numberEnter) \n\nPoints: \(gmPts)\nRebounds: \(gmReb)\nAssists: \(gmAst)\nSteals: \(gmStl)\nBlocks: \(gmBlk)\nFouls: \(gmPf)\nTurnovers: \(gmTov)\nFree Throws: \(gmFtm)/\(gmFta)= \(gmFtp)%\nField Goals: \(gmFgm)/\(gmFga)= \(gmFgp)%\nThree Points: \(gm3pm)/\(gm3pa)= \(gm3pp)%\nTrue Shot: \(gmTsp)%\nEfficiency: \(gmEff)\n\nbrought to you by Simple Stats - Basketball"
+    @IBAction func trashBtn(_ sender: Any) {
+        let alertController = UIAlertController(title: "⚠ CLEAR ALL", message: "Are you sure you want to clear all stats and start over?", preferredStyle: .alert)
+        
+        let cancelGameAction = UIAlertAction(title: "✗ Clear Stats", style: .default, handler: {
+            alert -> Void in
+            self.resetGame()
+        })
+        
+        let continueGameAction = UIAlertAction(title: "▹ Continue Game", style: .default, handler: {
+            (action : UIAlertAction!) -> Void in
+        })
+        
+        alertController.addAction(cancelGameAction)
+        alertController.addAction(continueGameAction)
+        
+        alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func shareBtn(_ sender: Any) {
+//        playClick()
+        let string: String = "Game stats for\n\(first) \(last) \(position) #\(number) \n\nPoints: \(gmPts)\nRebounds: \(gmReb)\nAssists: \(gmAst)\nSteals: \(gmStl)\nBlocks: \(gmBlk)\nFouls: \(gmPf)\nTurnovers: \(gmTov)\nFree Throws: \(gmFtm)/\(gmFta)= \(gmFtp)%\nField Goals: \(gmFgm)/\(gmFga)= \(gmFgp)%\nThree Points: \(gm3pm)/\(gm3pa)= \(gm3pp)%\nTrue Shot: \(gmTsp)%\nEfficiency: \(gmEff)\n\nfrom Basketball Simple Stats"
         
         let activityViewController = UIActivityViewController(activityItems: [string], applicationActivities: nil)
         present(activityViewController, animated: true, completion: nil)
     }
-    
-    
-    
     
 }
 

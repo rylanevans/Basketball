@@ -8,10 +8,8 @@
 
 import UIKit
 
-class BasketballCardProfileCell: UICollectionViewCell {
+class CardProfileCell: UICollectionViewCell {
     
     @IBOutlet weak var playerPhotoImageView: UIImageView!
-    @IBOutlet weak var playerFirstNameLabel: UILabel!
-    @IBOutlet weak var playerLastNameLabel: UILabel!
     
 }

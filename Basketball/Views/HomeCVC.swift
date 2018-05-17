@@ -12,20 +12,26 @@ import UIKit
 
 class HomeCVC: UICollectionViewController {
     
+    @IBOutlet weak var homeFlowLayout: UICollectionViewFlowLayout!
+    
+    
     var firstName = ["STEPHEN", "KEVIN", "LEBRON", "JAMES", "RUSSELL"]
     var lastName = ["CURRY", "DURANT", "JAMES", "HARDEN", "WESTBROOK"]
     var images = [UIImage(named: "Stephen"), UIImage(named: "Kevin"), UIImage(named: "LeBron"), UIImage(named: "James"), UIImage(named: "Russell")]
     
+    private let widthAdjustment: CGFloat = 0.8
+    private let numberOfItemsPerRow: CGFloat = 1.0
+    private let heightAdjustment: CGFloat = 0.8
+    private let space: CGFloat = 30.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        
-        // Do any additional setup after loading the view.
+        let width = ((self.view.frame.size.width) * widthAdjustment) / numberOfItemsPerRow
+        let height = ((self.view.frame.size.height) * heightAdjustment)
+        homeFlowLayout.itemSize = CGSize(width: width, height: (height))
+        homeFlowLayout.minimumInteritemSpacing = space
+        homeFlowLayout.minimumLineSpacing = space
         
 //        NotificationCenter.default.addObserver(self,
 //                                               selector: #selector(showPlayers),
@@ -35,10 +41,10 @@ class HomeCVC: UICollectionViewController {
 //                                               selector: #selector(showGames),
 //                                               name: NSNotification.Name("ShowGames"),
 //                                               object: nil)
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(showStats),
-                                               name: NSNotification.Name("ShowStats"),
-                                               object: nil)
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(showStats),
+//                                               name: NSNotification.Name("ShowStats"),
+//                                               object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(showDictionary),
                                                name: NSNotification.Name("ShowDictionary"),
@@ -56,10 +62,10 @@ class HomeCVC: UICollectionViewController {
 //    @objc func showGames() {
 //        performSegue(withIdentifier: "ShowGames", sender: nil)
 //    }
-    
-    @objc func showStats() {
-        performSegue(withIdentifier: "ShowStats", sender: nil)
-    }
+//
+//    @objc func showStats() {
+//        performSegue(withIdentifier: "ShowStats", sender: nil)
+//    }
     
     @objc func showDictionary() {
         performSegue(withIdentifier: "ShowDictionary", sender: nil)
@@ -99,16 +105,20 @@ class HomeCVC: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BasketballCardProfileCell", for: indexPath) as! BasketballCardProfileCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardProfileCell", for: indexPath) as! CardProfileCell
         
         // Configure the cell
         cell.playerPhotoImageView.image = images[indexPath.row]
-        cell.playerFirstNameLabel.text = firstName[indexPath.row]
-        cell.playerLastNameLabel.text = lastName[indexPath.row]
+//        cell.playerFirstNameLabel.text = firstName[indexPath.row]
+//        cell.playerLastNameLabel.text = lastName[indexPath.row]
         
         // Configure the cell
         
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Selected row is", indexPath.row)
     }
     
     // MARK: UICollectionViewDelegate

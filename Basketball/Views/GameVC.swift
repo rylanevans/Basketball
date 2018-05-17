@@ -150,26 +150,8 @@ class GameVC: UIViewController {
         
         let cancelGameAction = UIAlertAction(title: "✓ Save Game", style: .default, handler: {
             alert -> Void in
-            //            self.dismiss(animated: true, completion: nil)
-            
-            let alertController = UIAlertController(title: "", message: "Did you win or loose?", preferredStyle: .alert)
-            
-            let cancelGameAction = UIAlertAction(title: "✓ Won", style: .default, handler: {
-                alert -> Void in
-                self.dismiss(animated: true, completion: nil)
-            })
-            
-            let continueGameAction = UIAlertAction(title: "✗ Lost", style: .default, handler: {
-                (action : UIAlertAction!) -> Void in
-                self.dismiss(animated: true, completion: nil)
-            })
-            
-            alertController.addAction(cancelGameAction)
-            alertController.addAction(continueGameAction)
-            
-            alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
-            
-            self.present(alertController, animated: true, completion: nil)
+//            self.dismiss(animated: true, completion: nil)
+            self.wonOrLostAlert()
         })
         
         let continueGameAction = UIAlertAction(title: "▹ Continue Game", style: .default, handler: {
@@ -178,6 +160,72 @@ class GameVC: UIViewController {
         
         alertController.addAction(cancelGameAction)
         alertController.addAction(continueGameAction)
+        
+        alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func wonOrLostAlert() {
+        let alertController = UIAlertController(title: "GAME RESULTS", message: "Did you win or loose?", preferredStyle: .alert)
+        
+        let cancelGameAction = UIAlertAction(title: "✓ Won", style: .default, handler: {
+            alert -> Void in
+//            self.dismiss(animated: true, completion: nil)
+            self.howManyMinutesPlayAlert()
+        })
+        
+        let continueGameAction = UIAlertAction(title: "✗ Lost", style: .default, handler: {
+            (action : UIAlertAction!) -> Void in
+//            self.dismiss(animated: true, completion: nil)
+            self.howManyMinutesPlayAlert()
+        })
+        
+        alertController.addAction(cancelGameAction)
+        alertController.addAction(continueGameAction)
+        
+        alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func howManyMinutesPlayAlert() {
+        let alertController = UIAlertController(title: "MINUTES", message: "Enter the total approximate number of minutes played...", preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: "✓ Save", style: .default, handler: {
+            alert -> Void in
+            
+            let firstTextField = alertController.textFields![0] as UITextField
+            
+            print("firstName \(firstTextField.text ?? "")")
+            
+//            func updateItems() {
+//                guard let itemEntered = firstTextField.text else {return}
+//
+//                if let item = self.item {
+//                    ItemsController.sharedController.updateItems(item, item: itemEntered)
+//                } else {
+//                    ItemsController.sharedController.addItems(itemEntered)
+//                }
+//            }
+            
+            self.dismiss(animated: true, completion: nil)
+            
+//            updateItems()
+        })
+        
+        let cancelAction = UIAlertAction(title: "✗ IDK", style: .default, handler: {
+            (action : UIAlertAction!) -> Void in
+            self.dismiss(animated: true, completion: nil)
+        })
+        
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            textField.keyboardType = .decimalPad
+            textField.placeholder = "i.e. 12"
+        }
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
         
         alertController.view.tintColor = #colorLiteral(red: 0.9530000091, green: 0.6980000138, blue: 0.3289999962, alpha: 1)
         
@@ -252,6 +300,7 @@ class GameVC: UIViewController {
         _numberEnter = numberEnter
     }
     
+    @IBOutlet weak var teamNameLbl: UILabel!
     @IBOutlet weak var subtractLbl: UIButton!
     @IBOutlet weak var firstLbl: UILabel!
     @IBOutlet weak var lastLbl: UILabel!

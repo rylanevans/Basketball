@@ -48,12 +48,10 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
         
         var title = ""
         if section == 0 {
-            title = "Pages:"
-        } else if section == 1 {
             title = "Feedback:"
-        } else if section == 2 {
+        } else if section == 1 {
             title = "Help:"
-        } else if section == 3 {
+        } else if section == 2 {
             title = "Options:"
         } else {
             title = "IDK"
@@ -82,13 +80,6 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
         case 0:
             switch indexPath.row {
             case 0: self.tableView.reloadData()
-            case 1: NotificationCenter.default.post(name: NSNotification.Name("ShowStats"), object: nil)
-            self.tableView.reloadData()
-            default: break
-            }
-        case 1:
-            switch indexPath.row {
-            case 0: self.tableView.reloadData()
                 shareWithNetwork()
             case 1: self.tableView.reloadData()
                 checkPositiveOrNegitiveFeedback()
@@ -98,7 +89,7 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
                 suggestions()
             default: break
             }
-        case 2:
+        case 1:
             switch indexPath.row {
             case 0: NotificationCenter.default.post(name: NSNotification.Name("ShowDictionary"), object: nil)
             self.tableView.reloadData()
@@ -108,7 +99,7 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
             self.tableView.reloadData()
             default: break
             }
-        case 3:
+        case 2:
             switch indexPath.row {
             case 0: self.tableView.reloadData()
                 removeAdsPressed()

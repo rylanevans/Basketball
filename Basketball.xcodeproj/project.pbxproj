@@ -41,6 +41,7 @@
 		EE3CFF0B20AA4395008199F2 /* BasketballCardProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0A20AA4395008199F2 /* BasketballCardProfileCell.swift */; };
 		EE3CFF0D20AA49B7008199F2 /* GamesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0C20AA49B7008199F2 /* GamesCell.swift */; };
 		EE3CFF0F20AA4A41008199F2 /* StatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CFF0E20AA4A41008199F2 /* StatsCell.swift */; };
+		EE9C1C3E20AD0C720040245A /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C1C3D20AD0C720040245A /* UIViewExtention.swift */; };
 		EECA1026209033D300F3D66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA1025209033D300F3D66F /* AppDelegate.swift */; };
 		EECA1029209033D300F3D66F /* Basketball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECA1027209033D300F3D66F /* Basketball.xcdatamodeld */; };
 		EECA102B209033D300F3D66F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA102A209033D300F3D66F /* MasterViewController.swift */; };
@@ -104,6 +105,7 @@
 		EE3CFF0A20AA4395008199F2 /* BasketballCardProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballCardProfileCell.swift; sourceTree = "<group>"; };
 		EE3CFF0C20AA49B7008199F2 /* GamesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCell.swift; sourceTree = "<group>"; };
 		EE3CFF0E20AA4A41008199F2 /* StatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCell.swift; sourceTree = "<group>"; };
+		EE9C1C3D20AD0C720040245A /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
 		EECA1022209033D300F3D66F /* Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basketball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECA1025209033D300F3D66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECA1028209033D300F3D66F /* Basketball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basketball.xcdatamodel; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		EE399D10209D70A1008D642E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EE9C1C3C20AD0C390040245A /* UI Extensions */,
 				EE3CFEFC20A7D0FB008199F2 /* Service Files */,
 				EE399D36209F7658008D642E /* Fonts */,
 				EE399D11209D70CD008D642E /* Audio Files */,
@@ -252,6 +255,14 @@
 				EE3CFF0E20AA4A41008199F2 /* StatsCell.swift */,
 			);
 			path = "Cell Details";
+			sourceTree = "<group>";
+		};
+		EE9C1C3C20AD0C390040245A /* UI Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C1C3D20AD0C720040245A /* UIViewExtention.swift */,
+			);
+			path = "UI Extensions";
 			sourceTree = "<group>";
 		};
 		EECA1019209033D200F3D66F = {
@@ -454,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9C1C3E20AD0C720040245A /* UIViewExtention.swift in Sources */,
 				EECA1029209033D300F3D66F /* Basketball.xcdatamodeld in Sources */,
 				EE399D4720A014AD008D642E /* StatsCVC.swift in Sources */,
 				EE399D41209FF72B008D642E /* PlayerEditVC.swift in Sources */,

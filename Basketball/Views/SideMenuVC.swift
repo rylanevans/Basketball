@@ -82,11 +82,7 @@ class SideMenuTVC: UITableViewController, MFMailComposeViewControllerDelegate {
         case 0:
             switch indexPath.row {
             case 0: self.tableView.reloadData()
-            case 1: NotificationCenter.default.post(name: NSNotification.Name("ShowPlayers"), object: nil)
-            self.tableView.reloadData()
-            case 2: NotificationCenter.default.post(name: NSNotification.Name("ShowGames"), object: nil)
-            self.tableView.reloadData()
-            case 3: NotificationCenter.default.post(name: NSNotification.Name("ShowStats"), object: nil)
+            case 1: NotificationCenter.default.post(name: NSNotification.Name("ShowStats"), object: nil)
             self.tableView.reloadData()
             default: break
             }

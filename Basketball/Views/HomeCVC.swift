@@ -27,14 +27,14 @@ class HomeCVC: UICollectionViewController {
         
         // Do any additional setup after loading the view.
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(showPlayers),
-                                               name: NSNotification.Name("ShowPlayers"),
-                                               object: nil)
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(showGames),
-                                               name: NSNotification.Name("ShowGames"),
-                                               object: nil)
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(showPlayers),
+//                                               name: NSNotification.Name("ShowPlayers"),
+//                                               object: nil)
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(showGames),
+//                                               name: NSNotification.Name("ShowGames"),
+//                                               object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(showStats),
                                                name: NSNotification.Name("ShowStats"),
@@ -49,13 +49,13 @@ class HomeCVC: UICollectionViewController {
                                                object: nil)
     }
     
-    @objc func showPlayers() {
-        performSegue(withIdentifier: "ShowPlayers", sender: nil)
-    }
-    
-    @objc func showGames() {
-        performSegue(withIdentifier: "ShowGames", sender: nil)
-    }
+//    @objc func showPlayers() {
+//        performSegue(withIdentifier: "ShowPlayers", sender: nil)
+//    }
+//
+//    @objc func showGames() {
+//        performSegue(withIdentifier: "ShowGames", sender: nil)
+//    }
     
     @objc func showStats() {
         performSegue(withIdentifier: "ShowStats", sender: nil)
